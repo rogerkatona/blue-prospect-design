@@ -16,7 +16,7 @@ export default function HighlightQuoteHurff() {
                 <div className="flex flex-col my-12">
                 <span className="lg:text-3xl text-2xl ">
                         &quot;Roger is the most talented UX/UI specialist I have ever worked with.
-                        ...his real gift is in being able to make a software application's user interface easy
+                        ...his real gift is in being able to make a software application&apos;s user interface easy
                         to use while simultaneously filling the business needs at hand.&quot;
                     </span>
                     <span className="font-bold text-sm mt-2">
