@@ -39,7 +39,7 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                         <div className="md:flex md:flex-col md:p-8 md:block hidden">
                             <div  className="text-medGray">
                                 <div className="flex flex-col md:pb-12">
-                                    <p className="text-lightGray">Let's connect.  I look forward to getting to know you and working on something great!</p>
+                                    <p className="text-lightGray">Let&apos;s connect. I look forward to getting to know you and working on something great!</p>
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="">Roger Katona</span>

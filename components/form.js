@@ -56,7 +56,7 @@ export default function Form(){
                             name="message"
                             onChange={handleInputChange}
                             rows="4"
-                            placeholder="What's on your mind?"
+                            placeholder="What&apos;s on your mind?"
                             className="w-full border border-darkGray py-3 px-4 mb-4"
                         />
                         </div>
