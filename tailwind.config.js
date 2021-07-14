@@ -52,7 +52,7 @@ module.exports = {
       'raspberryBright': '#F9A2D8',
       'link': 'rgba(255,51,102,1)',
       'hoverLink': 'rgba(255,51,102,1)',
-      'hoverNav': 'rgba(0,180,241,1)',
+      'hoverNav': 'rgba(97,120,140,1)',
     }),
     backgroundColor: theme => ({
       ...theme('colors'),
@@ -81,7 +81,7 @@ module.exports = {
       'hoverLink': 'rgba(209,32,61,1)',
       'lightGray': '#e1e1e1',
       'darkBlue': '#06070d',
-      'hoverNav': 'rgba(0,180,241,1)',
+      'hoverNav': 'rgba(97,120,140,1)',
 
     }),
     borderColor: theme => ({
@@ -98,7 +98,7 @@ module.exports = {
       'raspberryLight': '#B7769C',
       'raspberryDark': '#895675',
       'link': 'rgba(255,51,102,1)',
-      'hoverNav': 'rgba(0,180,241,1)',
+      'hoverNav': 'rgba(97,120,140,1)',
     }),
     backgroundSize: {
       'auto': 'auto',
@@ -111,12 +111,10 @@ module.exports = {
       '16': '4rem',
     },
     backgroundImage: theme => ({
-      'hero-pattern': "url('/images/bg-hero3.png')",
-      'hero-sm': "url('/images/bg-hero-sm.jpg')",
-      'hero-about': "url('/images/aboutLadder.png')",
-      'bg-contactModal': "url('/images/bg-contact.jpeg')",
-      'footer-texture': "url('/img/footer-texture.png')",
-      'bg-quoteGraphic': "url('/img/quote-graphic.png')",
+      'hero-pattern': "url('/image/logo-bp.png'), width='1000px'",
+      'hero-sm': "url('/image/logo-bp.png')",
+      'hero-about': "url('/image/aboutLadder.png')",
+      'bg-contactModal': "url('/image/bg-contact.jpeg')",
     }),
 
     backgroundPosition: {
