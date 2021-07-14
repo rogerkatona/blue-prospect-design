@@ -5,7 +5,7 @@ export default function ClientLogos({ children, type }) {
         <section className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 items-center gap-10 justify-items-center m-24">
             <div>
                 <img
-                    src="image/logo/logo-fblue.png"
+                    src="image/logo-fblue.png"
                     height={60}
                     width={125}
                     alt={'floridaBlue'}
@@ -13,7 +13,7 @@ export default function ClientLogos({ children, type }) {
             </div>
             <div>
                 <img
-                    src="/image/logo/logo-mckesson.png"
+                    src="/image/logo-mckesson.png"
                     height={26}
                     width={190}
                     alt={'mckesson'}
@@ -21,7 +21,7 @@ export default function ClientLogos({ children, type }) {
             </div>
             <div>
                 <img
-                    src="/image/logo/logo-rsfx.png"
+                    src="/image/logo-rsfx.png"
                     height={30}
                     width={276}
                     alt={'rsfx'}
@@ -29,7 +29,7 @@ export default function ClientLogos({ children, type }) {
             </div>
             <div>
                 <img
-                    src="/image/logo/logo-simplymedical.png"
+                    src="/image/logo-simplymedical.png"
                     height={38}
                     width={200}
                     alt={'simplymedical'}
@@ -37,7 +37,7 @@ export default function ClientLogos({ children, type }) {
             </div>
             <div>
                 <img
-                    src="/image/logo/logo-mobymax.png"
+                    src="/image/logo-mobymax.png"
                     height={34}
                     width={130}
                     alt={'mobymax'}
@@ -46,7 +46,7 @@ export default function ClientLogos({ children, type }) {
             <div>
                 <img
                     priority
-                    src="/image/logo/logo-websense.png"
+                    src="/image/logo-websense.png"
                     height={27}
                     width={156}
                     alt={'websense'}
