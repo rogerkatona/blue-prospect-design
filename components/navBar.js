@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 
@@ -16,8 +15,8 @@ const navItems = [
     },
     {
         id: 2,
-        label: "Insights",
-        path: "/insights",
+        label: "Insight",
+        path: "/insight",
     },
     {
         id: 3,

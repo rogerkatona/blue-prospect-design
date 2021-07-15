@@ -3,7 +3,6 @@ import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from "../components/date";
-import Image from 'next/image'
 import {useEffect, useState} from "react";
 
 
@@ -16,7 +15,7 @@ export async function getStaticProps() {
     }
 }
 
-export default function Insights({allPostsData}) {
+export default function Insight({allPostsData}) {
 
     const [active, setActive] = useState(false)
 
@@ -73,7 +72,7 @@ export default function Insights({allPostsData}) {
                                     <a>
                                         <div className='flex lg:flex-row lg:items-center lg:order-1 flex-col'>
                                             <div className='lg:w-2/3 w-full'>
-                                                <Image
+                                                <img
                                                     priority
                                                     src={featured.imageSourceFeatured}
                                                     height={750}
@@ -112,7 +111,7 @@ export default function Insights({allPostsData}) {
                                     <a>
                                         <div className="">
                                             <div className=''>
-                                                <Image
+                                                <img
                                                     priority
                                                     src={bannerSMImageSource}
                                                     height={651}
