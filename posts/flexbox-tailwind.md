@@ -1,6 +1,6 @@
 ---
 title: 'Top 4 foundational Flexbox properties (using Tailwind.css)'
-type: "insights"
+type: "insight"
 date: '2021-07-06'
 description: 'The building blocks for success!'
 isFeatured: 'true'

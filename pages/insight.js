@@ -20,7 +20,7 @@ export default function Insight({allPostsData}) {
     const [active, setActive] = useState(false)
 
     let featuredPosts = allPostsData.filter(function (featured){
-        return featured.isFeatured === 'true' && featured.type === 'insights'
+        return featured.isFeatured === 'true' && featured.type === 'insight'
     })
 
     useEffect(() => {
@@ -46,7 +46,7 @@ export default function Insight({allPostsData}) {
                 <section className='md:px-16 md:py-8  px-8 py-4'>
                     <header className='flex md:flex-row flex-col md:items-center mb-9'>
                         <div className='text-6xl pr-8 text-gray-700 font-light'>
-                            Insights
+                            Insight
                         </div>
                         <div className='text-base text-gray-500 pt-3 leading-5'>
                             Thank you for coming.  Tips and learning opportunity for everything graphic design, UX, and front end development.
@@ -104,7 +104,7 @@ export default function Insight({allPostsData}) {
                 </section>
                     <section className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4'>
                         {allPostsData
-                            .filter(featured => featured.type === 'insights' && featured.isFeatured !== 'true')
+                            .filter(featured => featured.type === 'insight' && featured.isFeatured !== 'true')
                             .map(({ id, date, title, description, bannerSMImageSource }) => (
                             <div key={id} className="">
                                 <Link href={`/posts/${id}`}>
