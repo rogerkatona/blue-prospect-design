@@ -88,7 +88,7 @@ export default function Home({allPostsData}) {
                         </div>
                         <div className='text-secondary text-xs'>
                           <Date dateString={featured.date} />
-                        </div>
+                        </div>amp
                         <div className='text-black text-xl py-4'>{featured.description}</div>
                         <Link href={`/posts/${featured.id}`}>
                           <a className='text-link hover:underline uppercase'>Read The Full Story &#8594;</a>
