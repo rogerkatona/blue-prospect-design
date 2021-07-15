@@ -48,7 +48,7 @@ export default function Insight({allPostsData}) {
                         <div className='text-6xl pr-8 text-gray-700 font-light'>
                             Insight
                         </div>
-                        <div className='text-base text-gray-500 pt-3 leading-5'>
+                        <div id="subHeadlineText" className='text-base text-gray-500 pt-3 leading-5'>
                             Thank you for coming.  Tips and learning opportunity for everything graphic design, UX, and front end development.
                         </div>
                     </header>
