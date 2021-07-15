@@ -3,7 +3,6 @@ import {getAllPostIds, getPostData} from '../../lib/posts'
 import Head from "next/head";
 import Date from "../../components/date";
 import Link from "next/link";
-import Image from "next/image";
 
 export async function getStaticProps({ params }) {
     // Add the "await" keyword like this:
@@ -71,7 +70,7 @@ export default function Post({ postData }) {
                                 <a>
                                     <img
                                         priority
-                                        src='/images/icon-linkedIn.png'
+                                        src='/image/icon-linkedIn.png'
                                         height={32}
                                         width={32}
                                     />
@@ -84,7 +83,7 @@ export default function Post({ postData }) {
                                 <a>
                                     <img
                                         priority
-                                        src='/images/icon-Instagram.png'
+                                        src='/image/icon-Instagram.png'
                                         height={32}
                                         width={32}
                                     />
@@ -98,7 +97,7 @@ export default function Post({ postData }) {
                                 <a>
                                     <img
                                         priority
-                                        src='/images/icon-Twitter.png'
+                                        src='/image/icon-Twitter.png'
                                         height={32}
                                         width={32}
                                     />
