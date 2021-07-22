@@ -11,7 +11,6 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                 <Link href='/'>
                     <a className=''>
                         <img
-                            priority
                             src="/image/logo-bp.png"
                             height={71}
                             width={193}

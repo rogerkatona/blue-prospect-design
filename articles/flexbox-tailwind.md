@@ -1,20 +1,18 @@
 ---
 title: 'Top 4 foundational Flexbox properties (using Tailwind.css)'
-type: "insight"
+type: "articles"
+typeOfArticle: "Article"
 date: '2021-07-06'
-description: 'The building blocks for success!'
+description: 'Learn to use 4 key Flexbox properties.  You will find these properties incredibly useful, and eliminate dependency on legacy CSS hacks like float or inline-block.'
 isFeatured: 'true'
 imageSourceFeatured: '/image/postGraphic-flexboxTailwind-featured.jpg'
 bannerImageSource: '/image/banner-flexbox.jpg'
 bannerSMImageSource: '/image/bannerSM-flexbox.jpg'
-tags: 'Flexbox | Tailwind'
+topic: 'Flexbox | Tailwind | CSS'
 alt: 'Top 4 foundational Flexbox properties'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-authorTwitterURL: 'https://twitter.com/roger_katona'
-authorInstagramURL: 'https://www.instagram.com/rogerkatona/'
-authorLinkedInURL: 'https://www.linkedin.com/in/rogerkatona'
 ogURL: 'https://www.rogerkatona.com/posts/flexbox-tailwind'
 ogType: 'article'
 ogImage: 'https://www.rogerkatona.com/image/bannerSM-flexbox.jpg'
@@ -38,7 +36,7 @@ to have content lay on the page correctly.  Something as simple as having 3 cont
 
 ---
 
-## Flexbox: a simplified model
+## Flexbox: A simplified model
 We will focus on understanding 4 very important key flexbox tailwind.css properties.  This is the foundation for building more complex models.  We will discuss these properties by walking through a simple tutorial.  Note: Additional styles are used in the HTML to show the resulting design more clearly.  See the [live code](https://codepen.io/rogerkatona/pen/GRmpeXj) at codepen.  The 4 key flexbox and their corresponding CSS rendered properties we will work with: 
 
 - Flex-row `flex-direction:row`

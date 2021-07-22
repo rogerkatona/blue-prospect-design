@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import ClientLogos from '../components/clientLogos'
-import { getSortedPostsData } from '../lib/posts'
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout";
+import ClientLogos from "../components/clientLogos";
+import { getSortedPostsData } from "../lib/articles";
 import Link from "next/link";
 import Date from "../components/date";
 import HighlightQuoteHurff from "../components/highlight_quote_hurff";
 import HighlightContact from "../components/highlight_contact";
 import HighlightQuoteWhile from "../components/highlight_quote_while";
-import Hero from '../components/hero'
+import Hero from "../components/hero"
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -30,25 +30,23 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
         <Hero/>
-
         <ClientLogos/>
         <HighlightQuoteWhile/>
       <section className='xl:m-24 m-8 '>
         {
           featuredPosts
-              .filter(featured => featured.type === 'insight')
+              .filter(featured => featured.type === 'articles')
               .map(featured =>
-                  <div key={featured.id} className='flex lg:flex-row flex-col'>
+                  <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto'>
                     <div className='flex'>
                       <img
-                          priority
                           src={featured.imageSourceFeatured}
                           height={750}
                           width={1770}
-                          alt={'Featured Insights'}
+                          alt={'Featured Article'}
                       />
                     </div>
-                    <div className='flex pl-8 lg:pt-0 pt-12 lg:pb-0 pb-12 '>
+                    <div className='flex pl-8 lg:pt-0 px-12 lg:pb-0 '>
                       <div className='lg:mx-auto flex flex-col lg:justify-center'>
                         <div className='font-roboto text-3xl tracking-tighter '>
                           {featured.title}
@@ -57,8 +55,8 @@ export default function Home({allPostsData}) {
                           <Date dateString={featured.date} />
                         </div>
                         <div className='text-black text-xl py-4'>{featured.description}</div>
-                        <Link href={`/posts/${featured.id}`}>
-                          <a className='text-link hover:underline uppercase'>Read Featured Insight &#8594;</a>
+                        <Link href={`/articles/${featured.id}`}>
+                          <a className='text-link hover:underline uppercase'>READ FEATURED ARTICLE &#8594;</a>
                         </Link>
                       </div>
                     </div>
@@ -74,7 +72,6 @@ export default function Home({allPostsData}) {
                   <div key={featured.id} className='flex lg:flex-row-reverse flex-col'>
                     <div className='flex'>
                       <img
-                          priority
                           src={featured.imageSourceFeatured}
                           height={750}
                           width={1770}
@@ -90,7 +87,7 @@ export default function Home({allPostsData}) {
                           <Date dateString={featured.date} />
                         </div>amp
                         <div className='text-black text-xl py-4'>{featured.description}</div>
-                        <Link href={`/posts/${featured.id}`}>
+                        <Link href={`/articles/${featured.id}`}>
                           <a className='text-link hover:underline uppercase'>Read The Full Story &#8594;</a>
                         </Link>
                       </div>

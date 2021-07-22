@@ -1,11 +1,10 @@
 
 export default function HighlightQuoteWhile() {
     return (
-        <section className="lg:mx-24 mx-8 bg-gray my-24">
-            <div className="flex flex-row justify-center items-center mx-auto lg:p-24 p-8">
+        <section className="bg-gray w-full my-24">
+            <div className="flex flex-row justify-center items-center max-w-7xl mx-auto lg:py-24 p-8">
                 <div className='flex flex-col flex-shrink-0 mr-24 hidden lg:block'>
                     <img
-                        priority
                         src="/image/quote-graphic.png"
                         height={198}
                         width={56}

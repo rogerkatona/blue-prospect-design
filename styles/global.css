@@ -7,13 +7,13 @@
         @apply p-0 min-h-screen;
     }
     h1 {
-        @apply text-2xl font-bold ;
+        @apply font-roboto text-3xl;
     }
     h2 {
         @apply text-xl md:mt-10 mt-6 mb-2;
     }
     h3 {
-        @apply font-bold text-4xl font-roboto text-darkGray;
+        @apply text-4xl font-roboto text-darkGray;
     }
     h4 {
         @apply text-sm uppercase font-bold;
@@ -22,19 +22,16 @@
              @apply text-primaryBright mt-8 mb-4;
          }
     p {
-        @apply text-lightGray leading-loose text-justify md:text-left;
+        @apply leading-loose text-justify md:text-left mb-6;
     }
     ul {
-        @apply list-disc pl-4 text-lightGray leading-loose;
-    }
-    img {
-        @apply my-8;
+        @apply list-disc pl-4 leading-loose;
     }
     p a {
         @apply text-primaryBright;
     }
     code {
-        @apply text-white bg-primary px-3 py-1 border-raspberryBright border rounded text-sm ;
+        @apply text-gray-600 bg-gray px-3 py-1 border-primary border rounded text-sm ;
     }
     blockquote {
         @apply m-4 pl-4 border-l-4 border-primary;

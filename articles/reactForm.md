@@ -1,17 +1,18 @@
 ---
 title: 'React Hooks - useState, useEffect, and form validation.'
-type: "insight"
+type: 'articles'
 date: '2021-06-24'
-description: 'An excellent adventure with useState, useEffect, and form validation.'
+description: 'Learn the process of building a simple but very functional form with useState, useEffect, and form validation.'
 isFeatured: 'false'
 bannerImageSource: '/image/banner-reactHooks.jpg'
 bannerSMImageSource: '/image/bannerSM-reactHooks.jpg'
+topic: 'React | NextJS'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-authorTwitterURL: 'https://twitter.com/roger_katona'
-authorInstagramURL: 'https://www.instagram.com/rogerkatona/'
-authorLinkedInURL: 'https://www.linkedin.com/in/rogerkatona'
+ogURL: 'https://www.rogerkatona.com/posts/reactForm'
+ogType: 'article'
+ogImage: 'https://www.rogerkatona.com/image/bannerSM-reactHooks.jpg'
 
 ---
 
@@ -32,7 +33,7 @@ highlight once the user focuses on the input field.
 - For validation, I want to…
     - Check to see if the user has entered their name and email
         - If they haven’t entered a value, then when the "onSubmit" function is called.
-            - Alert the user if they didn’t enter
+            - Alert the user if they didn&apos;t enter
                 - Name
                 - Email
                 - Both Name and Email

@@ -1,4 +1,6 @@
 import Link from "next/link";
+import NavBar from "./navBar";
+import navItems from "../data/navItems";
 
 
 export default function Footer() {
@@ -7,30 +9,9 @@ export default function Footer() {
     return (
         <footer className="flex justify-center p-24 bg-primary text-white">
             <div className='flex md:flex-row flex-col'>
-                <Link href='/'>
-                    <a className='px-3 py-2 text-sm font-body uppercase hover:bg-hoverNav hover:text-white'>
-                        Home
-                    </a>
-                </Link>
-                <Link href='/portfolio'>
-                    <a className='px-3 py-2 text-sm font-body uppercase hover:bg-hoverNav hover:text-white'>
-                        Portfolio
-                    </a>
-                </Link>
-                <Link href='/insights'>
-                    <a className='px-3 py-2 text-sm font-body uppercase hover:bg-hoverNav hover:text-white'>
-                        Insights
-                    </a>
-                </Link>
-
-                <Link href='/about'>
-                    <a className='px-3 py-2 text-sm font-body uppercase hover:bg-hoverNav hover:text-white'>
-                        About
-                    </a>
-                </Link>
+                <NavBar navItems={navItems}/>
                 <Link href='/contact'>
-                    <button
-                        className='hover:bg-hoverNav text-white text-sm uppercase hover:text-gray-50 py-1 px-8 border hover:border-hoverNav '>
+                    <button className="text-white text-sm uppercase hover:text-sand py-1 px-8 border hover:border-sand lg:mt-0 lg:ml-6">
                         Contact
                     </button>
                 </Link>

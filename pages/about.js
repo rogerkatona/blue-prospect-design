@@ -10,19 +10,19 @@ export default function Contact() {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <main>
-                <section className='px-16 py-8 flex flex-col'>
-                    <section className='flex flex-row items-baseline mb-8'>
-                        <div className='text-6xl pr-8 text-gray-700 font-light'>
-                            About
-                        </div>
-                        <div className='text-base text-gray-500'>
-                            &nbsp;
-                        </div>
-                    </section>
+                <div className="max-w-7xl mx-auto xl:px-0 px-12 min-h-screen">
+                    <div className='mt-12'>
+                        <header className='mb-16'>
+                            <div id="headlineText" className='text-6xl text-gray-700 font-light'>
+                                About
+                            </div>
+                            <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
+                                A collection of articles to teach, inspire, and elevate our work as web designers and front-end developers.
+                            </div>
+                        </header>
+                     </div>
                     <HighlightContact/>
-                </section>
-            </main>
+                </div>
         </Layout>
     )
 }

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import Form from "../components/form";
 import Toast from "../components/toast";
-import global from "../lib/global";
+// import global from "../lib/global"
 
 export default function Contact() {
 
@@ -11,41 +11,31 @@ export default function Contact() {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-
-            <main className="mt-24">
                 {/*<p>Status: {global.form.showSuccess}</p>*/}
                 {/*<Toast/>*/}
-
-                <section className='px-16 py-8 flex flex-col'>
-                    <section className='flex flex-col md:flex-row items-baseline mb-8'>
-                        <div className='text-6xl pr-8 text-gray-700 font-light'>
-                            Contact
-                        </div>
-                        <div className='text-base text-gray-500'>
-                            Let&apos;s connect.
-                        </div>
-                    </section>
-
-                    <section className="flex flex-col md:flex-row justify-center h-screen75vh">
-
+                    <div className="max-w-7xl mx-auto xl:px-0 px-12 min-h-screen">
+                            <header className='my-12'>
+                                <div id="headlineText" className='text-6xl text-gray-700 font-light'>
+                                    Contact
+                                </div>
+                                <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
+                                    Our passion to design and built things are only matched by our desire to serve our clients.
+                                </div>
+                            </header>
+                    <div className="flex flex-col md:flex-row justify-center h-screen65vh">
                             <div className="flex flex-col justify-center md:p-16 p-8 bg-bg-contactModal bg-no-repeat bg-cover ">
                                 <div className="">
-                                    <p className="text-lightGray md:pb-16 pb-6">I look forward to getting to know you and working on something great!</p>
+                                    <p className="text-lightGray text-2xl md:pb-6 pb-2">I look forward to getting to know you and working on something great!</p>
                                 </div>
                                 <div className="text-lightGray">
-                                    <span className="">Roger Katona</span>
-                                    <p>roger.katona@gmail.com</p>
-                                    <p>904-450-5173</p>
+                                    <div>904-450-5173</div>
                                 </div>
                             </div>
                             <div className="md:p-16 p-8 bg-gray w-full flex flex-col justify-center">
                                 <Form/>
                             </div>
-
-                    </section>
-
-                </section>
-            </main>
+                    </div>
+                    </div>
         </Layout>
     )
 }

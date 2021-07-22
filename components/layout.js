@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Header from "./header";
 import Footer from "./footer";
 
-const name = 'Roger Katona'
 export const siteTitle = 'Blue Prospect Design, LLC.'
 
 export default function Layout({ children}) {
@@ -11,6 +10,7 @@ export default function Layout({ children}) {
         <>
             <div className="flex flex-col">
                 <Head>
+                    <title>{siteTitle}</title>
                     <link rel="icon" href="/favicon.ico" />
                     <meta
                         name="viewport"

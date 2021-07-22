@@ -1,8 +1,12 @@
 
 export default function Hero({ children, home }) {
     return (
-        <section className="flex lg:h-screen h-screen/2 bg-top-12 bg-hero-sm lg:bg-hero-pattern lg:bg-center lg:bg-center bg-no-repeat bg-primaryLight">
-
+        <section className="flex lg:h-screen90vh h-screen/2 bg-primaryLight flex-row justify-center items-center">
+            <div className="lg:bg-center bg-no-repeat mx-12">
+                <img
+                    src="/image/logo-bp.png"
+                />
+            </div>
         </section>
     )
 }

@@ -1,21 +1,18 @@
 ---
-title: 'UI/UX Purpose Driven Design'
-type: "insight"
+title: 'Top 3 UI/UX Design Mistakes'
+type: 'articles'
 date: '2020-03-17'
-description: 'A new design must start at the beginning.  This is the beginning.'
+description: "Without careful attention, we can all make these all-too-common design mistakes.  This approach will ensure you catch before deploying."
 isFeatured: 'false'
 bannerImageSource: '/image/banner-purposeDrivenDesign.jpg'
 bannerSMImageSource: '/image/bannerSM-purposeDrivenDesign.jpg'
 imageSourceFeatured: '/image/blog-purposeDrivenDesign-feature.png'
-tags: 'Design | User Interface'
+topic: 'UI/UX Design | Process'
 alt: 'graphic for purpose driven design blog post'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-authorTwitterURL: 'https://twitter.com/roger_katona'
-authorInstagramURL: 'https://www.instagram.com/rogerkatona/'
-authorLinkedInURL: 'https://www.linkedin.com/in/rogerkatona'
-ogURL: 'https://www.rogerkatona.com/posts/flexbox-tailwind'
+ogURL: 'https://www.rogerkatona.com/posts/top-3-unacceptable-design-mistakes'
 ogType: 'article'
 ogImage: 'https://www.rogerkatona.com/image/bannerSM-purposeDrivenDesign.jpg'
 ---
@@ -26,7 +23,7 @@ ogImage: 'https://www.rogerkatona.com/image/bannerSM-purposeDrivenDesign.jpg'
 
 ## Heading
 
-We recommend using **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
+We recommend usin'g **Static Generation** (with and without data) whenever possible because your page can be built once and served by CDN, which makes it much faster than having a server render the page on every request.
 
 You can use Static Generation for many types of pages, including:
 
@@ -37,7 +34,7 @@ You can use Static Generation for many types of pages, including:
   
 <br>
 
-![lord of the rings blog post](/image/blog-purposeDrivenDesign-feature.png)
+![lord of the rings blog post](/public/image/blog-purposeDrivenDesign-feature.png)
 <br>
 
 You should ask yourself: "Can I pre-render this page **ahead** of a user's request?" If the answer is yes, then you should choose Static Generation.
