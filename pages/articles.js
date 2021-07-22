@@ -4,7 +4,7 @@ import { getSortedPostsData } from '../lib/articles'
 import Link from 'next/link'
 import Date from "../components/date";
 import {useEffect, useState} from "react";
-import TopicFilter from "../components/TopicFilter";
+import Topics from "../components/articleTopics";
 import topicItems from "../data/topicItems";
 
 
@@ -56,7 +56,7 @@ export default function Articles({allPostsData}) {
                     <section className="flex flex-row justify-between">
                         <section className='lg:block hidden '>
                             <span className={'font-bold'}>Topics:</span>
-                            <TopicFilter topicItems={topicItems}/>
+                            <Topics topicItems={topicItems}/>
                         </section>
                         <section className="w-4/5">
                                 {featuredPosts

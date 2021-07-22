@@ -2,7 +2,7 @@ import Layout from '../../components/layout'
 import {getAllPostIds, getPostData} from '../../lib/articles'
 import Head from "next/head";
 import Date from "../../components/date";
-import TopicFilter from "../../components/topicFilter";
+import Topics from "../../components/articleTopics";
 import topicItems from "../../data/topicItems";
 import SocialMediaItem from "../../components/socialMediaItem";
 import socialMediaItems from "../../data/socialMediaItems";
@@ -51,7 +51,7 @@ export default function Post({ postData }) {
                     <section className="flex flex-row justify-between">
                         <section className='lg:block hidden '>
                             <span className={'font-bold'}>Topics:</span>
-                            <TopicFilter topicItems={topicItems}/>
+                            <Topics topicItems={topicItems}/>
                         </section>
 
                         <section className="lg:w-2/3">

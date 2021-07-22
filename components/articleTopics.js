@@ -11,7 +11,7 @@ const Topic = props => (
 );
 
 
-const TopicFilter = props => (
+const ArticleTopics = props => (
     <>
         {props.topicItems.map(topic => (
             <Topic
@@ -22,4 +22,4 @@ const TopicFilter = props => (
     </>
 );
 
-export default TopicFilter;
+export default ArticleTopics;
