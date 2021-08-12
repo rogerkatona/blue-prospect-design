@@ -8,6 +8,7 @@ import HighlightQuoteHurff from "../components/highlight_quote_hurff";
 import HighlightContact from "../components/highlight_contact";
 import HighlightQuoteWhile from "../components/highlight_quote_while";
 import Hero from "../components/hero"
+import AboutHero from "../components/about-hero";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -31,6 +32,7 @@ export default function Home({allPostsData}) {
       </Head>
         <Hero/>
         <ClientLogos/>
+        <AboutHero/>
         <HighlightQuoteWhile/>
       <section className='xl:m-24 m-8 '>
         {

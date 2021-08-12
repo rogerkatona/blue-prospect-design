@@ -29,7 +29,7 @@ export default function Work({allPostsData}) {
         function scrollMove(){
             const link = document.querySelector('Link')
             const mOut = document.addEventListener(mouseout, '')
-            if ([link.href === '/articles/:id*']){
+            if ([link.href === '/work/:id*']){
                 setActive(true)
                 return () => {
                     link.removeEventListener("mouseout", handleMouseOut)

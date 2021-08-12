@@ -41,7 +41,7 @@ export const Form = ({ initialRef}) => {
                     if (res.status === 200) {
                         setToastMessage({message:(
                                 <div className="text-green-800 absolute bottom-0 -mb-10">
-                                    Thank you for reaching out to me.  I'll respond to you shortly!  Have a great day.
+                                    Thank you for reaching out to me.  I&apos;ll respond to you shortly!  Have a great day.
                                 </div>
                             )})
                         clearFormState()
