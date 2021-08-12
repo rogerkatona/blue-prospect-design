@@ -1,35 +1,92 @@
-import Link from "next/link";
-import useForm from "../lib/useForm"
+import {useState} from "react";
 
 
-export default function Form(){
 
-    const { formData, validateName, validateEmail, validateForm, handleInputChange} = useForm(
-        {
-            name: "",
-            email: '',
-            message: ""
+export const Form = ({ initialRef}) => {
+
+    const initialState = {
+        name: '',
+        email: '',
+        contactMessage: ''
+    };
+
+    const [formState, setFormState] = useState(initialState);
+    const [toastMessage, setToastMessage] = useState({
+        type: '',
+        message: ''
+    });
+
+    const clearFormState = () => {
+        setFormState({ ...initialState });
+    };
+
+    const handleContactFormSubmit = async (e) => {
+        e.preventDefault()
+        const { name, email} = formState
+        const { message } = toastMessage
+        if (name && email) {
+            try {
+                fetch('https://5zk902u879.execute-api.us-east-1.amazonaws.com/contactForm', {
+                    method: 'POST',
+                    headers: {
+                        'Accept': 'application/json, text/plain, */*',
+                        "Access-Control-Allow-Headers" : "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
+                        'Content-Type': 'application/json; charset=utf-8',
+                        'Access-Control-Allow-Origin' : '*',
+                        "Access-Control-Allow-Methods" : "OPTIONS,POST",
+                        "X-Requested-With" : "*"
+                    },
+                    body: JSON.stringify(formState)
+                }).then((res) => {
+                    if (res.status === 200) {
+                        setToastMessage({message:(
+                                <div className="text-green-800 absolute bottom-0 -mb-10">
+                                    Thank you for reaching out to me.  I'll respond to you shortly!  Have a great day.
+                                </div>
+                            )})
+                        clearFormState()
+                    }
+                })
+            } catch (e) {
+                setToastMessage({message:(
+                        <div className="text-danger absolute bottom-0 -mb-10">
+                            Deepest apologies.  There was an error with your request.  Please try again later.
+                        </div>
+                    )})
+            }
+        } else {
+            setToastMessage({message:(
+                    <div className="text-danger absolute bottom-0 -mb-10">
+                        Please verify all fields are filled out.
+                    </div>
+                )})
         }
-    );
+    };
 
-    const { name, email, message } = formData;
+
 
     return (
-        <form>
-            <div className="flex flex-col">
+        <>
+        <form onSubmit={handleContactFormSubmit}>
+            <div className="flex flex-col relative">
+
+                {/*show message to user*/}
+                {toastMessage.message}
+
                 <div className="flex flex-col">
                     <label
                         className="uppercase tracking-wide text-xs">
                         Name*
                     </label>
                     <input
-                        name="name"
-                        type="text"
-                        onChange={handleInputChange}
-                        placeholder="Enter full name"
-                        className={`${validateName ? 'border-danger mb-0' : 'border-darkGray mb-6'} bg-gray-200 text-black border py-3 px-4 `}
+                        ref={initialRef}
+                        className="bg-gray-200 text-black border py-3 px-4 mb-4"
+                        placeholder="Enter your name"
+                        value={formState.name}
+                        onChange={(e) =>
+                            setFormState({ ...formState, name: e.target.value })
+                        }
                     />
-                    <p className={`${validateName ? '' : 'hidden'} flex text-danger text-sm mb-4`}>Please enter your name.</p>
                 </div>
                 <div className="flex flex-col">
                     <label
@@ -37,13 +94,14 @@ export default function Form(){
                         Email*
                     </label>
                     <input
-                        name="email"
+                        className="bg-gray-200 text-black border py-3 px-4 mb-4"
+                        placeholder="yourname@email.com"
                         type="email"
-                        onChange={handleInputChange}
-                        placeholder="example: joe@abc.com"
-                        className={`${validateEmail ? 'border-danger  mb-0' : 'border-darkGray mb-4'} bg-gray-200 text-black border py-3 px-4 `}
+                        value={formState.email}
+                        onChange={(e) =>
+                            setFormState({ ...formState, email: e.target.value })
+                        }
                     />
-                    <p className={`${validateEmail ? '' : 'hidden'} flex text-danger text-sm mb-4`}>Please enter your email address.</p>
                 </div>
                 <div className="">
                     <div className="">
@@ -53,28 +111,25 @@ export default function Form(){
                         </label>
                         <div>
                         <textarea
-                            name="message"
-                            onChange={handleInputChange}
-                            rows="4"
-                            placeholder="What&apos;s on your mind?"
                             className="w-full border border-darkGray py-3 px-4 mb-4"
+                            rows="4"
+                            value={formState.contactMessage}
+                            onChange={(e) =>
+                                setFormState({ ...formState, contactMessage: e.target.value })
+                            }
                         />
                         </div>
                     </div>
                 </div>
                 <div className="">
-                    <div className="">
-                        <Link href=''>
-                            <button
-                                onClick={(e)=>{validateForm(e)}}
-                                type="submit"
-                                className="hover:bg-secondary text-white text-2xl uppercase hover:text-gray-50 py-4 px-8 bg-link">
-                                Submit
-                            </button>
-                        </Link>
-                    </div>
+                    <button
+                        type="submit"
+                        className="hover:bg-secondary text-white text-2xl uppercase hover:text-gray-50 py-4 px-8 bg-link">
+                        Submit
+                    </button>
                 </div>
             </div>
         </form>
+        </>
     )
 }

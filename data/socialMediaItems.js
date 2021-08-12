@@ -19,6 +19,12 @@ const socialMediaItems = [
         path: "https://www.linkedin.com/in/rogerkatona",
         alt: 'LinkedIn',
     },
+    {
+        label: "Youtube",
+        src: '/image/icon-Youtube.png',
+        path: "https://www.youtube.com/channel/UC_wtM1aHa2RUIqm_WQp4JzA",
+        alt: 'Youtube',
+    },
 ];
 
 export default socialMediaItems
