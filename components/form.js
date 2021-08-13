@@ -22,22 +22,26 @@ export const Form = ({ initialRef}) => {
 
     const handleContactFormSubmit = async (e) => {
         e.preventDefault()
-        const { name, email} = formState
+
+        const endpoint =
+            "https://ke37371vfe.execute-api.us-east-1.amazonaws.com/default/sendContactEmail";
+        // We use JSON.stringify here so the data can be sent as a string via HTTP
+        const body = JSON.stringify({
+            senderName: formState.name,
+            senderEmail: formState.email,
+            message: formState.contactMessage
+        });
+        const requestOptions = {
+            method: "POST",
+            body
+        };
+
+        const { name, email, contactMessage} = formState
         const { message } = toastMessage
         if (name && email) {
             try {
-                fetch('https://5zk902u879.execute-api.us-east-1.amazonaws.com/contactForm', {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json, text/plain, */*',
-                        "Access-Control-Allow-Headers" : "Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token",
-                        'Content-Type': 'application/json; charset=utf-8',
-                        'Access-Control-Allow-Origin' : '*',
-                        "Access-Control-Allow-Methods" : "OPTIONS,POST",
-                        "X-Requested-With" : "*"
-                    },
-                    body: JSON.stringify(formState)
-                }).then((res) => {
+                fetch(endpoint, requestOptions)
+                    .then((res) => {
                     if (res.status === 200) {
                         setToastMessage({message:(
                                 <div className="text-green-800 absolute bottom-0 -mb-10">
