@@ -50,7 +50,7 @@ export default function Articles({allPostsData}) {
                             Articles
                         </div>
                         <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
-                            A collection of articles to teach, inspire, and elevate our work as web designers and front-end developers.
+                            A collection of articles to teach, inspire, and elevate our work as entrepreneurs, web designers, and front-end developers.
                         </div>
                     </header>
                     <section className="flex flex-row justify-between">
