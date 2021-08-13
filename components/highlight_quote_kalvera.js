@@ -15,7 +15,7 @@ export default function HighlightQuoteKalvera() {
                 <div className="flex flex-col my-12">
                 <span className="lg:text-3xl text-2xl">
                         &quot;Blue Prospect Design did a web analysis for my company Kalvera.  We
-                    knew our conversation rates were lower than expected, but didn&apos;t realize the primary cause was a frustrating registration process.  We spend many dollars on marketing, this was an incredible finding that increased our conversions by 22%!&quot;
+                    knew our conversation rates were lower than expected, but didn&apos;t realize the primary cause was a frustrating registration process.  We spend many dollars on marketing, this was an incredible finding that increased our conversions by 15%!&quot;
                     </span>
                     <span className="font-bold text-sm mt-2">
                         Kalpana Sundar <br/>
