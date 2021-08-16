@@ -96,11 +96,12 @@ export default function Post({ postData }) {
                                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                             </section>
                         </section>
-                        <section className='lg:block hidden flex-shrink-0'>
+                        <section className='lg:block hidden flex-shrink-0 '>
                             <div className=''>
-                                <Link href='/campaign/website-analysis'>
-                                    <a>
+                                <Link href='/campaign/website-analysis' >
+                                    <a className='block overflow-hidden'>
                                         <img
+                                            className="filter transition duration-500 ease-in-out transform hover:scale-102"
                                             src="/image/ad-websiteAnalysis.png"
                                             alt="Website analysis graphic"
                                         />

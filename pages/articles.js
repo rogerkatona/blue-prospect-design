@@ -62,8 +62,9 @@ export default function Articles({allPostsData}) {
                             {featuredPosts
                                 .map(featured =>
                                     <div key={featured.id} className='flex flex-col'>
-                                        <div className='flex '>
+                                        <div className=''>
                                             <img
+                                                className=""
                                                 src={featured.bannerImageSource}
                                                 height={651}
                                                 width={1626}

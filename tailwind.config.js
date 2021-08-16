@@ -11,7 +11,6 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-
     extend: {
       height: theme => ({
         "screen/2": "50vh",
@@ -23,6 +22,7 @@ module.exports = {
         "screen75vh": "calc(75vh)",
         "screen65vh": "calc(65vh)",
       }),
+
       gradientColorStops: theme => ({
         ...theme('colors'),
         'primary': '#3490dc',
@@ -115,6 +115,21 @@ module.exports = {
       '60%': '60%',
       '16': '4rem',
     },
+    scale: {
+      '0': '0',
+      '25': '.25',
+      '50': '.5',
+      '75': '.75',
+      '90': '.9',
+      '95': '.95',
+      '100': '1',
+      '102': '1.02',
+      '105': '1.05',
+      '110': '1.1',
+      '125': '1.25',
+      '150': '1.5',
+      '200': '2',
+    },
     backgroundImage: theme => ({
       'hero-pattern': "url('/image/logo-bp.png')",
       'hero-sm': "url('/image/logo-bp.png')",
@@ -170,7 +185,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      brightness: ['hover', 'focus'],
+      grayscale: ['hover', 'focus'],
+    },
   },
   plugins: [],
 }
