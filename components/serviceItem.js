@@ -34,9 +34,9 @@ const ServiceItem = props => {
                     alt={item.alt}
                     list={
                         item.list.map((list) =>
-                            <li>
-                                {list}
-                            </li>
+                                <li key={list.id}>
+                                    {list}
+                                </li>
                         )
                     }
                 />

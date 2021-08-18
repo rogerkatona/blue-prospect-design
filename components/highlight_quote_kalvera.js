@@ -14,7 +14,7 @@ export default function HighlightQuoteKalvera() {
                 </div>
                 <div className="flex flex-col ">
                 <span className="lg:text-3xl text-2xl">
-                        &quot;Blue Prospect's comprehensive user experience audit uncovered significant issues that impacted our prospective customers trying to book our services online. This was an incredible discovery that increased our online bookings by 15%!&quot;
+                        &quot;Blue Prospect&apos;s comprehensive user experience audit uncovered significant issues that impacted our prospective customers trying to book our services online. This was an incredible discovery that increased our online bookings by 15%!&quot;
                     </span>
                     <span className="font-bold text-sm mt-2">
                         Kalpana Sundar <br/>
