@@ -14,15 +14,14 @@ import {useRouter} from "next/router";
 
 
 const navItems = [
-
+    {
+        label: "Services",
+        path: "/services",
+    },
     {
         label: "Our Work",
         path: "/work",
     },
-    // {
-    //     label: "Services",
-    //     path: "/services",
-    // },
     {
         label: "Articles",
         path: '/articles',

@@ -9,6 +9,8 @@ import HighlightContact from "../components/highlight_contact";
 import HighlightQuoteWhile from "../components/highlight_quote_while";
 import Hero from "../components/hero"
 import AboutHero from "../components/about-hero";
+import HighlightServices from "../components/highlight_services";
+import HighlightQuoteKalvera from "../components/highlight_quote_kalvera";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -31,14 +33,15 @@ export default function Home({allPostsData}) {
         <title>{siteTitle}</title>
       </Head>
         <Hero/>
-        <ClientLogos/>
+        <HighlightServices/>
         <AboutHero/>
-        <HighlightQuoteWhile/>
-      <section className='xl:m-24 m-8 '>
+        <HighlightQuoteKalvera/>
+      <section className='bg-primary bg-opacity-5 w-full py-36 '>
         {
           featuredPosts
               .filter(featured => featured.type === 'articles')
               .map(featured =>
+
                   <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto'>
                     <div className='flex'>
                       <img
@@ -65,8 +68,8 @@ export default function Home({allPostsData}) {
                   </div>
               )}
       </section>
-        <HighlightQuoteHurff/>
-      <section className='lg:m-24 m-8 '>
+
+      <section className='lg:my-36 m-12'>
         {
           featuredPosts
               .filter(featured => featured.type === 'work')
@@ -98,6 +101,7 @@ export default function Home({allPostsData}) {
               )}
       </section>
         <HighlightContact/>
+        <ClientLogos/>
     </Layout>
   )
 }

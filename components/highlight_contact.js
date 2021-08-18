@@ -6,11 +6,11 @@ export default function HighlightContact() {
     const {isShowing, toggle} = useModal();
     return (
         <>
-            <section className="lg:m-24 mx-8 my-24">
+            <section className="bg-primary bg-opacity-5 w-full py-36 lg:my-24 mx-8 my-24">
                 <div className="flex flex-row justify-center">
                     <div className="">
                         <div className="text-3xl text-center">
-                                Reach out.  I want to hear from you.
+                                Reach out.  I&apos;d love to hear from you.
                         </div>
                         <div className="flex justify-center pt-6">
                             <Link href=''>
