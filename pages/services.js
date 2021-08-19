@@ -11,22 +11,19 @@ export default function Services() {
                 <title>{siteTitle}</title>
             </Head>
             <div className="">
-                <section className=' max-w-7xl mx-auto mt-12'>
-                    <header className='mb-16'>
+                <section className=' max-w-7xl mx-auto mt-12 xl:px-0 md:px-12 px-6'>
+                    <header className='mb-12'>
                         <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                             Services
-                        </div>
-                        <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
-                            User Experience Audit Report. User Interface, User Experience and Graphic Design. Development Services.
                         </div>
                     </header>
                 </section>
                 <ServicesBanner/>
-                <section className="py-24 xl:px-0 px-12">
+                <section className="py-12 xl:px-0 px-12">
                     <div className="flex lg:flex-row flex-col max-w-7xl mx-auto ">
-                        <div className="flex flex-col lg:mx-0 mx-10 lg:mt-0 mt-12 items-center justify-center text-center">
+                        <div className="flex flex-col items-center justify-center text-center">
                             <div className='font-roboto text-4xl tracking-tighter py-6'>Blue Prospect Design Studio Provides...</div>
-                            <div className="lg:text-3xl text-2xl pt-4">User experience (UX) audit services for existing digital products, user interface (UI), user experience, graphic design,
+                            <div className="lg:text-2xl text-xl pt-4">User experience (UX) audit services for existing digital products, user interface (UI), user experience, graphic design,
                                 and development services for brand new and existing products.
                             </div>
                             <div className="grid md:grid-cols-3 gap-4 md:pb-0 mt-12 ">

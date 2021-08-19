@@ -4,9 +4,7 @@ import ClientLogos from "../components/clientLogos";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
-import HighlightQuoteHurff from "../components/highlight_quote_hurff";
 import HighlightContact from "../components/highlight_contact";
-import HighlightQuoteWhile from "../components/highlight_quote_while";
 import Hero from "../components/hero"
 import AboutHero from "../components/about-hero";
 import HighlightServices from "../components/highlight_services";
@@ -42,7 +40,7 @@ export default function Home({allPostsData}) {
               .filter(featured => featured.type === 'articles')
               .map(featured =>
 
-                  <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto'>
+                  <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto xl:px-0 md:px-12 px-6'>
                     <div className='flex'>
                       <img
                           src={featured.bannerSMImageSource}
@@ -51,12 +49,12 @@ export default function Home({allPostsData}) {
                           alt={'Featured Article'}
                       />
                     </div>
-                      <div className='flex lg:pl-12 lg:py-0 pt-8 pb-0'>
+                      <div className='flex lg:pl-12 lg:py-0 pt-6 pb-0'>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                               <div className='font-roboto text-3xl tracking-tighter '>
                                   {featured.title}
                               </div>
-                              <div className='text-secondary text-xs'>
+                              <div className='text-secondary text-xs pt-3'>
                                   <Date dateString={featured.date} />
                               </div>
                               <div className='text-black text-xl py-4'>{featured.description}</div>
@@ -69,12 +67,12 @@ export default function Home({allPostsData}) {
               )}
       </section>
 
-      <section className='lg:my-36 m-12'>
+      <section className='my-36 xl:px-0 md:px-12 px-6'>
         {
           featuredPosts
               .filter(featured => featured.type === 'work')
               .map(featured =>
-                  <div key={featured.id} className='flex lg:flex-row lg:flex-row-reverse flex-col max-w-7xl mx-auto'>
+                  <div key={featured.id} className='flex lg:flex-row lg:flex-row-reverse flex-col max-w-7xl mx-auto '>
                       <div className=''>
                           <img
                               src={featured.imageSourceFeatured}

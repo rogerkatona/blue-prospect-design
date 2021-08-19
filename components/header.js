@@ -11,12 +11,12 @@ export default function Header() {
 
     return (
         <header className="bg-primaryLight">
-            <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-7xl py-4 xl:px-0 px-12">
+            <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-7xl py-6 xl:px-0 md:px-12 px-6">
                 <section>
                     <Link href='/'>
                         <a>
                             <div className="flex flex-row items-center ">
-                                <div className="md:block hidden">
+                                <div className="">
                                     <svg
                                         viewBox={'0 0 59 57'}
                                         width={'50'}
@@ -59,7 +59,7 @@ export default function Header() {
             c0.3,0.5,0.44,1.11,0.44,1.83C40.39,30.95,40.24,31.56,39.95,32.06z"/>
                                     </svg>
                                 </div>
-                                <span className="text-2xl font-body uppercase tracking-tight text-white pl-3 hover:text-sand ">
+                                <span className="text-2xl font-body uppercase tracking-tight text-white pl-3 hover:text-sand md:block hidden">
                                     Blue Prospect Design
                                 </span>
                             </div>
@@ -67,7 +67,7 @@ export default function Header() {
                     </Link>
                 </section>
                 <div>
-                    <section className="absolute right-10 top-5">
+                    <section className="absolute lg:right-10 right-6 top-8">
                         <button
                             className="lg:hidden text-secondary hover:text-primary focus:appearance-none border border-transparent"
                             onClick={handleClick}>

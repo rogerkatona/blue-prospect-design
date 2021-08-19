@@ -1,11 +1,11 @@
 export default function ServicesBanner({ children, home }) {
     return (
-        <section className="flex bg-primaryLight bg-opacity-5 flex-row justify-center items-center w-full ">
-            <div className=" max-w-7xl mx-auto my-36 py-24 ">
-                <div className="font-roboto text-4xl tracking-tighter py-6">
-
-                We pride ourselves on bringing the most value to our clients!
-                </div>
+        <section className="bg-sand py-12">
+            <div className="flex-row justify-center items-center lg:mx-auto lg:max-w-7xl xl:px-0 md:px-12 px-6 flex-shrink-0">
+                <img
+                    className=""
+                    src="/image/bannerLG-services.png"
+                />
             </div>
         </section>
     )
