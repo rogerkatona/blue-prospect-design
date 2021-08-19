@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import HighlightContact from "../components/highlight_contact";
-import AboutHero from "../components/about-hero";
+import Highlight_video_artistry from "../components/about-hero";
 import AboutPieChart from "../components/about-pieChart";
 import HighlightQuoteKalvera from "../components/highlight_quote_kalvera";
 
@@ -26,7 +26,7 @@ export default function About() {
                     </header>
                 </div>
             </div>
-            <AboutHero />
+            <Highlight_video_artistry />
             <HighlightQuoteKalvera/>
             <AboutPieChart/>
             <HighlightContact/>

@@ -1,12 +1,12 @@
 import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
-import ClientLogos from "../components/clientLogos";
+import HighlightClientLogos from "../components/highlight_clientLogos";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
 import HighlightContact from "../components/highlight_contact";
-import Hero from "../components/hero"
-import AboutHero from "../components/about-hero";
+import HeroIndex from "../components/hero_index"
+import HighlightVideoArtistry from "../components/highlight_video_artistry";
 import HighlightServices from "../components/highlight_services";
 import HighlightQuoteKalvera from "../components/highlight_quote_kalvera";
 
@@ -30,9 +30,9 @@ export default function Home({allPostsData}) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-        <Hero/>
+        <HeroIndex/>
         <HighlightServices/>
-        <AboutHero/>
+        <HighlightVideoArtistry/>
         <HighlightQuoteKalvera/>
       <section className='bg-primary bg-opacity-5 w-full py-36 '>
         {
@@ -99,7 +99,7 @@ export default function Home({allPostsData}) {
               )}
       </section>
         <HighlightContact/>
-        <ClientLogos/>
+        <HighlightClientLogos/>
     </Layout>
   )
 }

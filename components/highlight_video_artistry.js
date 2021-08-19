@@ -1,6 +1,6 @@
 import AboutVideo from "./aboutVideo";
 
-export default function AboutHero() {
+export default function HighlightVideoArtistry() {
     return (
         <section className="bg-primaryLight bg-opacity-5 py-36 xl:px-0 md:px-12 px-6">
             <div className="flex lg:flex-row flex-col flex-col-reverse justify-center items-center max-w-7xl mx-auto">
