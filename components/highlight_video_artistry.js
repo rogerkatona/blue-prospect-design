@@ -2,7 +2,7 @@ import AboutVideo from "./aboutVideo";
 
 export default function HighlightVideoArtistry() {
     return (
-        <section className="bg-primaryLight bg-opacity-5 py-36 xl:px-0 md:px-12 px-6">
+        <section className="bg-primaryLight bg-opacity-5 xl:px-0 md:px-12 px-6 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
             <div className="flex lg:flex-row flex-col flex-col-reverse justify-center items-center max-w-7xl mx-auto">
                 <div className="w-full">
                     <div className="lg:text-2xl text-2xl py-6 ">

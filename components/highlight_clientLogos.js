@@ -1,8 +1,8 @@
 
 export default function HighlightClientLogos({ children, type }) {
     return (
-        <div className="mx-auto max-w-7xl xl:px-0 md:px-12 px-6">
-            <section className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 items-center gap-10 justify-items-center my-24">
+        <div className="mx-auto max-w-7xl xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+            <section className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-1 items-center gap-10 justify-items-center">
                 <div>
                     <img
                         src="image/logo-fblue.png"

@@ -9,6 +9,7 @@ import HeroIndex from "../components/hero_index"
 import HighlightVideoArtistry from "../components/highlight_video_artistry";
 import HighlightServices from "../components/highlight_services";
 import HighlightQuoteKalvera from "../components/highlight_quote_kalvera";
+import HighlightQuoteWhile from "../components/highlight_quote_while";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -26,7 +27,7 @@ export default function Home({allPostsData}) {
   })
 
   return (
-    <Layout className="flex flex-col items-center justify-center  py-2">
+    <Layout className="flex flex-col items-center justify-center py-2">
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -34,13 +35,13 @@ export default function Home({allPostsData}) {
         <HighlightServices/>
         <HighlightVideoArtistry/>
         <HighlightQuoteKalvera/>
-      <section className='bg-primary bg-opacity-5 w-full py-36 '>
+      <section className='bg-primary bg-opacity-5 w-full xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
         {
           featuredPosts
               .filter(featured => featured.type === 'articles')
               .map(featured =>
 
-                  <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto xl:px-0 md:px-12 px-6'>
+                  <div key={featured.id} className='flex lg:flex-row flex-col max-w-7xl mx-auto'>
                     <div className='flex'>
                       <img
                           src={featured.bannerSMImageSource}
@@ -54,7 +55,7 @@ export default function Home({allPostsData}) {
                               <div className='font-roboto text-3xl tracking-tighter '>
                                   {featured.title}
                               </div>
-                              <div className='text-secondary text-xs pt-3'>
+                              <div className='text-secondary text-xs'>
                                   <Date dateString={featured.date} />
                               </div>
                               <div className='text-black text-xl py-4'>{featured.description}</div>
@@ -66,8 +67,7 @@ export default function Home({allPostsData}) {
                   </div>
               )}
       </section>
-
-      <section className='my-36 xl:px-0 md:px-12 px-6'>
+      <section className='xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
         {
           featuredPosts
               .filter(featured => featured.type === 'work')
@@ -81,7 +81,7 @@ export default function Home({allPostsData}) {
                               alt={'featured portfolio project'}
                           />
                       </div>
-                      <div className='flex lg:pr-12 lg:py-0 pt-8 pb-0 lg:w-2/3'>
+                      <div className='flex lg:pr-12 lg:py-0 pt-6 pb-0 lg:w-2/3'>
                           <div className='lg:mx-auto flex flex-col lg:justify-center'>
                               <div className='font-roboto text-3xl tracking-tighter '>
                                   {featured.title}
