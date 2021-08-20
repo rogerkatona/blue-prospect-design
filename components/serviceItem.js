@@ -10,8 +10,8 @@ const Services = props => (
                     width={150}
                     alt={props.alt}
                 />
-            <div className="flex flex-col items-start md:pl-0 ">
-                <div className="text-3xl text-secondary mt-4">{props.label}</div>
+            <div className="flex flex-col items-center 0">
+                <div className="lg:text-3xl text-2xl text-secondary pt-4">{props.label}</div>
 
                 <ul className="flex flex-col text-lg text-gray-600 text-left list-disc mt-2 ">
                         {props.list}

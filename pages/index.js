@@ -9,7 +9,6 @@ import HeroIndex from "../components/hero_index"
 import HighlightVideoArtistry from "../components/highlight_video_artistry";
 import HighlightServices from "../components/highlight_services";
 import HighlightQuoteKalvera from "../components/highlight_quote_kalvera";
-import HighlightQuoteWhile from "../components/highlight_quote_while";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
