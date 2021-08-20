@@ -2,8 +2,8 @@ import Layout from '../../components/layout'
 import {getAllPostIds, getPostData} from '../../lib/posts'
 import Head from "next/head";
 import Date from "../../components/date";
-// import Topics from "../../components/articleTopics";
-// import topicItems from "../../data/topicItems";
+import Topics from "../../components/articleTopics";
+import topicItems from "../../data/topicItems";
 import SocialMediaItem from "../../components/socialMediaItem";
 import socialMediaItems from "../../data/socialMediaItems";
 import Link from "next/link";
@@ -39,34 +39,31 @@ export default function Post({ postData }) {
                 <meta property="og:image" content={postData.ogImage} />
             </Head>
 
-            <div className="max-w-7xl mx-auto xl:px-0 px-12 min-h-screen">
-                <section className='mt-12'>
-                    <header className='mb-12'>
+            <div className="max-w-7xl mx-auto ">
+                <section className=''>
+                    <header className='xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
                         <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                             Articles
                         </div>
-                        <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
-                            A collection of articles to teach, inspire, and elevate our work as entrepreneurs, web designers, and front-end developers.
+                        <div id="subHeadlineText" className='text-base text-gray-500 '>
+                            A collection of articles to teach, inspire, and elevate our work as web designers and front-end developers.
                         </div>
                     </header>
-                    <section className="flex flex-row justify-between space-x-6">
-                        {/*<section className='lg:block hidden '>*/}
-                        {/*    <span className={'font-bold'}>Topics:</span>*/}
-                        {/*    <Topics topicItems={topicItems}/>*/}
-                        {/*</section>*/}
+                    <section className="w-full bg-opacity-5 bg-primaryLight">
 
-                        <section className="">
+                        <section className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                             <div className='font-roboto text-2xl '>{postData.title}</div>
-                            <div className="mb-2"> {postData.description} </div>
+                            <div className="py-2"> {postData.description} </div>
                             <div className=""> <span className="font-bold pr-2 ">Topics:</span>{postData.topic} </div>
-                            <div className='font-banner text-xs mt-4 '>
+                            <div className='font-banner text-xs pt-2 '>
                                 <Date dateString={postData.date} />
                             </div>
                             <hr/>
 
                             <section className='flex flex-row items-center'>
-                                <div className='mr-4'>
+                                <div className='md:pr-4'>
                                     <img
+                                        className="md:block hidden"
                                         src={postData.authorImageSource}
                                         height={80}
                                         width={80}
@@ -84,10 +81,14 @@ export default function Post({ postData }) {
                             <section>
                                 <div className='my-8'>
                                     <img
+                                        className="lg:block hidden"
                                         src={postData.bannerImageSource}
-                                        height={401}
-                                        width={1626}
-                                        alt="Post banner"
+                                        alt={postData.alt}
+                                    />
+                                    <img
+                                        className="lg:hidden block"
+                                        src={postData.bannerSMImageSource}
+                                        alt={postData.alt}
                                     />
                                 </div>
                             </section>
@@ -96,13 +97,14 @@ export default function Post({ postData }) {
                                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                             </section>
                         </section>
-                        <section className='lg:block hidden flex-shrink-0 '>
+                        <section className='lg:block hidden '>
                             <div className=''>
-                                <Link href='/campaign/website-analysis' >
-                                    <a className='block overflow-hidden'>
+                                <Link href='/campaign/website-analysis'>
+                                    <a>
                                         <img
-                                            className="filter transition duration-500 ease-in-out transform hover:scale-102"
                                             src="/image/ad-websiteAnalysis.png"
+                                            height={498}
+                                            width={251}
                                             alt="Website analysis graphic"
                                         />
                                     </a>

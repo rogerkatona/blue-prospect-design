@@ -3,7 +3,7 @@ import Layout, { siteTitle } from '../components/layout'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import {useEffect, useState} from "react";
-
+import Date from "../components/date";
 
 
 
@@ -53,57 +53,61 @@ export default function Work({allPostsData}) {
                             Designing digital application products that were ahead of their time, across an array of platforms, for the world’s largest, most influential brands, mid-sized companies and extraordinary startups.
                         </div>
                     </header>
-                    <section className="flex flex-row ">
-
-                        <section>
-                            {featuredPosts
-                                .map(featured =>
-                                    <div key={featured.id} className='flex flex-col'>
-                                        <div className='flex '>
-                                            <img
-                                                src={featured.bannerImageSource}
-                                                height={651}
-                                                width={1626}
-                                                alt={featured.alt}
-                                            />
+                    <section className='bg-primaryLight bg-opacity-5 w-full xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+                        {featuredPosts
+                            .map(featured =>
+                                <div key={featured.id} className='flex flex-col'>
+                                    <div className=''>
+                                        <img
+                                            className="lg:block hidden"
+                                            src={featured.bannerImageSource}
+                                            alt={featured.alt}
+                                        />
+                                        <img
+                                            className="lg:hidden block"
+                                            src={featured.bannerSMImageSource}
+                                            alt={featured.alt}
+                                        />
+                                    </div>
+                                    <div className="pt-2">
+                                        <Link
+                                            href={`/articles/${featured.id}`}>
+                                            <a>
+                                                <div className='font-roboto text-3xl font-medium text-link hover:underline'>{featured.title}</div>
+                                            </a>
+                                        </Link>
+                                        <div className='font-banner text-xs '>
+                                            <Date dateString={featured.date} />
                                         </div>
-                                        <div className="mt-3">
-                                            <Link
-                                                href={`/portfolio/${featured.id}`}>
-                                                <a>
-                                                    <div className='font-roboto text-3xl font-medium text-link hover:underline'>{featured.title}</div>
-                                                </a>
-                                            </Link>
-                                            <div className="pt-1"> <span className="pr-2 font-bold">Project Brief:</span>{featured.description} </div>
+                                        <div className="pt-2">{featured.description} </div>
+                                    </div>
+                                </div>
+                            )}
+                    </section>
+                    <section className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                        {allPostsData
+                            .filter(featured => featured.type === 'work' && featured.isFeatured !== 'true')
+                            .map(({ id, date, title, bannerSMImageSource, alt}) => (
+                                <div key={id} className="flex flex-col md:py-0 py-6">
+                                    <div className='flex'>
+                                        <img
+                                            src={bannerSMImageSource}
+                                            alt={alt}
+                                        />
+                                    </div>
+                                    <div className="pt-2 md:w-4/5">
+                                        <Link href={`/articles/${id}`}>
+                                            <a>
+                                                <div className='font-roboto text font-medium text-link hover:underline truncate'>{title}</div>
+                                            </a>
+                                        </Link>
+                                        <div className='font-banner text-xs '>
+                                            <Date dateString={date} />
                                         </div>
                                     </div>
 
-                                )}
-                            <section className="flex lg:flex-row flex-col lg:justify-center my-12 ">
-                                {allPostsData
-                                    .filter(featured => featured.type === 'work' && featured.isFeatured !== 'true')
-                                    .map(({ id, date, title, description, bannerSMImageSource, alt, topic }) => (
-                                        <div key={id} className="flex flex-col my-4">
-                                            <div className='flex lg:pt-0'>
-                                                <img
-                                                    src={bannerSMImageSource}
-                                                    height={301}
-                                                    width={1626}
-                                                    alt={alt}
-                                                />
-                                            </div>
-                                            <div className="lg:mt-1">
-                                                <Link href={`/portfolio/${id}`}>
-                                                    <a>
-                                                        <div className='font-roboto  font-medium text-link hover:underline'>{title}</div>
-                                                    </a>
-                                                </Link>
-                                            </div>
-
-                                        </div>
-                                    ))}
-                            </section>
-                        </section>
+                                </div>
+                            ))}
                     </section>
                 </section>
             </div>
