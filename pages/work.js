@@ -7,6 +7,7 @@ import Date from "../components/date";
 
 
 
+
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
     return {
@@ -16,7 +17,7 @@ export async function getStaticProps() {
     }
 }
 
-export default function Work({allPostsData}) {
+export default function Portfolio({allPostsData}) {
 
 
     const [active, setActive] = useState(false)
@@ -29,7 +30,7 @@ export default function Work({allPostsData}) {
         function scrollMove(){
             const link = document.querySelector('Link')
             const mOut = document.addEventListener(mouseout, '')
-            if ([link.href === '/work/:id*']){
+            if ([link.href === '/articles/:id*']){
                 setActive(true)
                 return () => {
                     link.removeEventListener("mouseout", handleMouseOut)
@@ -43,17 +44,18 @@ export default function Work({allPostsData}) {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <div className="max-w-7xl mx-auto xl:px-0 px-12 min-h-screen">
-                <section className='mt-12'>
-                    <header className='mb-12'>
-                        <div id="headlineText" className='text-6xl text-gray-700 font-light'>
-                            Our Work
-                        </div>
-                        <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
-                            Designing digital application products that were ahead of their time, across an array of platforms, for the world’s largest, most influential brands, mid-sized companies and extraordinary startups.
-                        </div>
-                    </header>
-                    <section className='bg-primaryLight bg-opacity-5 w-full xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+            <section>
+                <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+                    <div id="headlineText" className='text-6xl text-gray-700 font-light'>
+                        Our Work
+                    </div>
+                    <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
+                        For over 15 years, Designing digital products that were ahead of their time, across an array of platforms, for the world’s largest, most influential brands, mid-sized companies and extraordinary startups.
+                    </div>
+                </header>
+
+                <section className='bg-primaryLight bg-opacity-5 w-full '>
+                    <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                         {featuredPosts
                             .map(featured =>
                                 <div key={featured.id} className='flex flex-col'>
@@ -71,7 +73,7 @@ export default function Work({allPostsData}) {
                                     </div>
                                     <div className="pt-2">
                                         <Link
-                                            href={`/articles/${featured.id}`}>
+                                            href={`/work/${featured.id}`}>
                                             <a>
                                                 <div className='font-roboto text-3xl font-medium text-link hover:underline'>{featured.title}</div>
                                             </a>
@@ -83,8 +85,10 @@ export default function Work({allPostsData}) {
                                     </div>
                                 </div>
                             )}
-                    </section>
-                    <section className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                    </div>
+                </section>
+                <section className="max-w-7xl mx-auto ">
+                    <div className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
                         {allPostsData
                             .filter(featured => featured.type === 'work' && featured.isFeatured !== 'true')
                             .map(({ id, date, title, bannerSMImageSource, alt}) => (
@@ -108,9 +112,9 @@ export default function Work({allPostsData}) {
 
                                 </div>
                             ))}
-                    </section>
+                    </div>
                 </section>
-            </div>
+            </section>
         </Layout>
     )
 }
