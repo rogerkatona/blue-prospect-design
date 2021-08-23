@@ -1,5 +1,5 @@
 ---
-title: 'Design Project: Home ASAP'
+title: 'Home ASAP'
 type: 'work'
 date: '2021-06-24'
 description: 'Design a B2C web application for a real estate agents property listings.  Building the User Interface from the ground up by creating an Information Architecture (IA) document and provide an interactive prototype.'
@@ -36,16 +36,16 @@ home listings, their recent activity, an opportunity to learn more about the age
 
 ---
 
-## Deliver to the development team fully designed pages in an interactive prototype
+## Deliver fully designed pages in an interactive prototype
 This page provided a full description of the agent, including about, ratings and reviews, recent sales activity sections.
 ![Home ASAP Design](/image/postGraphic-homeASAPB.png)
 
 ---
 
-This page demonstrates the agents recent activity in the marketplace.
+This page shows the agents recent activity in the marketplace.
 ![Home ASAP Design](/image/postGraphic-homeASAPC.png)
 
 ---
 
-This page demonstrates a secondary search method by viewing an agents properties via a google maps api intergration.  
+This page shows a secondary search method by viewing an agents properties via a google maps api intergration.  
 ![Home ASAP Design](/image/postGraphic-homeASAPD.png)

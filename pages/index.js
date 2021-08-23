@@ -89,7 +89,7 @@ export default function Home({allPostsData}) {
                                   <Date dateString={featured.date} />
                               </div>
                               <div className='text-black text-xl py-4'>{featured.description}</div>
-                              <Link href={`/portfolio/${featured.id}`}>
+                              <Link href={`/work/${featured.id}`}>
                                   <a className='text-link hover:underline uppercase'>Read The Full Story &#8594;</a>
                               </Link>
                           </div>

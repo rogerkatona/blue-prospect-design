@@ -42,7 +42,7 @@ export default function Portfolio({allPostsData}) {
     return (
         <Layout home>
             <Head>
-                <title>{siteTitle}</title>
+                <title>Design Project: {siteTitle}</title>
             </Head>
             <section>
                 <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12'>
@@ -59,7 +59,7 @@ export default function Portfolio({allPostsData}) {
                         {featuredPosts
                             .map(featured =>
                                 <div key={featured.id} className='flex flex-col'>
-                                    <div className=''>
+                                    <div className='pt-6'>
                                         <img
                                             className="lg:block hidden"
                                             src={featured.bannerImageSource}
@@ -87,12 +87,12 @@ export default function Portfolio({allPostsData}) {
                             )}
                     </div>
                 </section>
-                <section className="max-w-7xl mx-auto ">
-                    <div className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                <section className="max-w-7xl mx-auto">
+                    <div className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6">
                         {allPostsData
                             .filter(featured => featured.type === 'work' && featured.isFeatured !== 'true')
                             .map(({ id, date, title, bannerSMImageSource, alt}) => (
-                                <div key={id} className="flex flex-col md:py-0 py-6">
+                                <div key={id} className="flex flex-col md:py-12 pb-6">
                                     <div className='flex'>
                                         <img
                                             src={bannerSMImageSource}
@@ -100,7 +100,7 @@ export default function Portfolio({allPostsData}) {
                                         />
                                     </div>
                                     <div className="pt-2 md:w-4/5">
-                                        <Link href={`/articles/${id}`}>
+                                        <Link href={`/work/${id}`}>
                                             <a>
                                                 <div className='font-roboto text font-medium text-link hover:underline truncate'>{title}</div>
                                             </a>

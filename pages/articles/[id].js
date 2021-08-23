@@ -39,9 +39,9 @@ export default function Post({ postData }) {
                 <meta property="og:image" content={postData.ogImage} />
             </Head>
 
-            <div className="max-w-7xl mx-auto ">
+            <div className="">
                 <section className=''>
-                    <header className='xl:px-0 md:px-12 px-6 py-12'>
+                    <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12'>
                         <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                             Articles
                         </div>
@@ -50,9 +50,9 @@ export default function Post({ postData }) {
                         </div>
                     </header>
                     <section className="w-full bg-opacity-5 bg-primaryLight">
-
-                        <section className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
-                            <div className='font-roboto text-2xl '>{postData.title}</div>
+                            <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12 flex flex-row">
+                        <section className="w-4/5">
+                            <div className='font-roboto lg:text-3xl text-2xl '>{postData.title}</div>
                             <div className="py-2"> {postData.description} </div>
                             <div className=""> <span className="font-bold pr-2 ">Topics:</span>{postData.topic} </div>
                             <div className='font-banner text-xs pt-2 '>
@@ -97,7 +97,7 @@ export default function Post({ postData }) {
                                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                             </section>
                         </section>
-                        <section className='lg:block hidden '>
+                        <section className='lg:block hidden px-12 '>
                             <div className=''>
                                 <Link href='/campaign/website-analysis'>
                                     <a>
@@ -112,7 +112,9 @@ export default function Post({ postData }) {
 
                             </div>
                         </section>
+                        </div>
                     </section>
+
                 </section>
             </div>
 
