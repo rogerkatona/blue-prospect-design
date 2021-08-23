@@ -45,7 +45,7 @@ export default function Articles({allPostsData}) {
             </Head>
             <div className="max-w-7xl mx-auto min-h-screen">
 
-                <header className='xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+                <header className='xl:px-0 md:px-12 px-6 py-12'>
                     <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                         Articles
                     </div>

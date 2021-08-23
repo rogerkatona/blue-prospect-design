@@ -45,7 +45,7 @@ export default function Portfolio({allPostsData}) {
                 <title>{siteTitle}</title>
             </Head>
             <section>
-                <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12'>
+                <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12'>
                     <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                         Our Work
                     </div>
@@ -55,7 +55,7 @@ export default function Portfolio({allPostsData}) {
                 </header>
 
                 <section className='bg-primaryLight bg-opacity-5 w-full '>
-                    <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12">
+                    <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12">
                         {featuredPosts
                             .map(featured =>
                                 <div key={featured.id} className='flex flex-col'>
