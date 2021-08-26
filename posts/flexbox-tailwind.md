@@ -13,9 +13,9 @@ alt: 'Top 4 foundational Flexbox properties'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-ogURL: 'https://www.rogerkatona.com/posts/flexbox-tailwind'
+ogURL: 'https://www.blueprospect.com/posts/flexbox-tailwind'
 ogType: 'article'
-ogImage: 'https://www.rogerkatona.com/image/bannerSM-flexbox.png'
+ogImage: 'https://www.blueprospect.com/image/bannerSM-flexbox.png'
 
 
 ---

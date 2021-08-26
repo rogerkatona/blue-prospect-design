@@ -11,7 +11,7 @@ topic: 'eCommerce Design | Usability Research | Logo Design | Information Archit
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-ogURL: 'https://www.rogerkatona.com/posts/betterVersion-crossTraining'
+ogURL: 'https://www.blueprospect.com/articles/betterVersion-crossTraining'
 ogType: 'article'
 ogImage: 'https://www.blueprospect.com/image/bgSM-simply-medical.png'
 

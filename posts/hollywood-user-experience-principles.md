@@ -12,9 +12,9 @@ alt: 'graphic for purpose driven design blog post'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
-ogURL: 'https://www.rogerkatona.com/posts/hollywood-disaster-user-experience-principles'
+ogURL: 'https://www.blueprospect.com/posts/hollywood-disaster-user-experience-principles'
 ogType: 'article'
-ogImage: 'https://www.rogerkatona.com/image/bannerSM-hollywood.png'
+ogImage: 'https://www.blueprospect.com/image/bannerSM-hollywood.png'
 ---
 <br>
 

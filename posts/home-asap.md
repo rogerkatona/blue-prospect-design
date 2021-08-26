@@ -7,9 +7,9 @@ isFeatured: 'false'
 bannerImageSource: '/image/bgLG-home-asap.png'
 bannerSMImageSource: '/image/bgSM-home-asap.png'
 topic: 'React | NextJS | User Interface Design | User Experience Design | Invision | Sketch'
-ogURL: 'https://www.rogerkatona.com/posts/reactForm'
+ogURL: 'https://www.blueprospect.com/posts/reactForm'
 ogType: 'portfolio'
-ogImage: 'https://www.rogerkatona.com/image/bannerSM-reactHooks.jpg'
+ogImage: 'https://www.blueprospect.com/image/bannerSM-reactHooks.jpg'
 
 ---
 
