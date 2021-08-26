@@ -27,7 +27,7 @@ export default function WebsiteAnalysisContact() {
                         <div className="text-lightGray">
                             <div className="flex flex-col md:pb-12">
                                 <span>Starting at:</span>
-                                <p className="text-lightGray text-6xl">$1,299.00</p>
+                                <p className="text-lightGray text-6xl">$599.00</p>
                             </div>
                             <div className="flex flex-col md:pb-12">
                                 <p className="text-lightGray">Enter your information in the form and submit your request for a website analysis.  I look forward to working
