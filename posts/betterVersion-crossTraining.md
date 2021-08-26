@@ -3,7 +3,7 @@ title: 'Cross-Training - An investment in your greatest resources'
 type: "articles"
 date: '2021-08-10'
 description: 'A better method of cross-training for UX Designers that emphasizes a deep learning of roles nearest to you in the organization.'
-isFeatured: 'true'
+isFeatured: 'false'
 bannerImageSource: '/image/banner-crossTraining.jpg'
 bannerSMImageSource: '/image/bannerSM-crossTraining.jpg'
 topic: 'Process | UI/UX Design'

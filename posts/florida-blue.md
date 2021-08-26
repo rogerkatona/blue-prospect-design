@@ -2,7 +2,7 @@
 title: 'Florida Blue'
 type: "work"
 typeOfArticle: "Article"
-date: '2021-07-06'
+date: '2021-04-06'
 description: 'Learn to use 4 key Flexbox properties.  You will find these properties incredibly useful, and eliminate dependency on legacy CSS hacks like float or inline-block.'
 isFeatured: 'false'
 imageSourceFeatured: '/image/bgLG-florida-blue.png'
@@ -20,4 +20,4 @@ ogImage: 'https://www.rogerkatona.com/image/bannerSM-flexbox.png'
 
 ---
 
-## Coming soon...
+## In review...

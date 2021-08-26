@@ -2,8 +2,6 @@ import Layout from '../../components/layout'
 import {getAllPostIds, getPostData} from '../../lib/posts'
 import Head from "next/head";
 import Date from "../../components/date";
-import Topics from "../../components/articleTopics";
-import topicItems from "../../data/topicItems";
 import SocialMediaItem from "../../components/socialMediaItem";
 import socialMediaItems from "../../data/socialMediaItems";
 import Link from "next/link";
@@ -50,8 +48,18 @@ export default function Post({ postData }) {
                         </div>
                     </header>
                     <section className="w-full bg-opacity-5 bg-primaryLight">
-                            <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-24 py-12 flex flex-row">
-                        <section className="w-4/5">
+                        <div className='lg:hidden md:block hidden max-w-7xl mx-auto md:px-12 px-6 pt-12'>
+                            <Link href='/campaign/website-analysis'>
+                                <a>
+                                    <img
+                                        src="/image/adLG-ux-audit.png"
+                                        alt="Website analysis graphic"
+                                    />
+                                </a>
+                            </Link>
+                        </div>
+                            <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-12 py-12 flex flex-row">
+                        <section className="lg:w-4/5">
                             <div className='font-roboto lg:text-3xl text-2xl '>{postData.title}</div>
                             <div className="py-2"> {postData.description} </div>
                             <div className=""> <span className="font-bold pr-2 ">Topics:</span>{postData.topic} </div>
@@ -79,7 +87,7 @@ export default function Post({ postData }) {
                                 </div>
                             </section>
                             <section>
-                                <div className='my-8'>
+                                <div className='mt-6'>
                                     <img
                                         className="lg:block hidden"
                                         src={postData.bannerImageSource}
@@ -97,19 +105,16 @@ export default function Post({ postData }) {
                                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                             </section>
                         </section>
-                        <section className='lg:block hidden px-12 '>
+                        <section className='flex lg:block hidden pl-12 flex-shrink-0 '>
                             <div className=''>
                                 <Link href='/campaign/website-analysis'>
                                     <a>
                                         <img
-                                            src="/image/ad-websiteAnalysis.png"
-                                            height={498}
-                                            width={251}
-                                            alt="Website analysis graphic"
+                                            src="/image/adSM-ux-audit.png"
+                                            alt="UX audit graphic"
                                         />
                                     </a>
                                 </Link>
-
                             </div>
                         </section>
                         </div>

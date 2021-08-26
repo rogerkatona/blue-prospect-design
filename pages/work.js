@@ -78,9 +78,6 @@ export default function Portfolio({allPostsData}) {
                                                 <div className='font-roboto text-3xl font-medium text-link hover:underline'>{featured.title}</div>
                                             </a>
                                         </Link>
-                                        <div className='font-banner text-xs '>
-                                            <Date dateString={featured.date} />
-                                        </div>
                                         <div className="pt-2">{featured.description} </div>
                                     </div>
                                 </div>
@@ -88,7 +85,7 @@ export default function Portfolio({allPostsData}) {
                     </div>
                 </section>
                 <section className="max-w-7xl mx-auto">
-                    <div className="md:grid md:grid-cols-3 md:gap-4 xl:px-0 md:px-12 px-6">
+                    <div className="md:grid md:grid-cols-4 md:gap-4 xl:px-0 md:px-12 px-6">
                         {allPostsData
                             .filter(featured => featured.type === 'work' && featured.isFeatured !== 'true')
                             .map(({ id, date, title, bannerSMImageSource, alt}) => (
@@ -105,9 +102,6 @@ export default function Portfolio({allPostsData}) {
                                                 <div className='font-roboto text font-medium text-link hover:underline truncate'>{title}</div>
                                             </a>
                                         </Link>
-                                        <div className='font-banner text-xs '>
-                                            <Date dateString={date} />
-                                        </div>
                                     </div>
 
                                 </div>
