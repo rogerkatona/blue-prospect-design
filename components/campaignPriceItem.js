@@ -28,7 +28,9 @@ const CampaignPriceItem = props => {
                     footnote={item.footnote}
                     list={
                         item.list.map((list) =>
-                            <li key={list.list}>
+                            <li
+                                key={list.list}
+                                className={`${list.startsWith('Number') ? 'font-bold' : ''}`}>
                                 {list}
                             </li>
                         )
