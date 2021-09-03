@@ -2,6 +2,7 @@ import NavBar from '../components/navBar'
 import Link from "next/link";
 import { useState} from 'react'
 import navItems from "../data/navItems";
+import {useRouter} from "next/router";
 
 
 export default function Header() {
@@ -9,8 +10,10 @@ export default function Header() {
     const [active, setActive] = useState(false)
     const handleClick = () => setActive(!active)
 
+    const router = useRouter()
+
     return (
-        <header className="bg-primaryLight">
+        <header className={`${router.pathname.startsWith("/campaign/")  ? 'bg-campaign' : 'bg-primaryLight'}`}>
             <div className="lg:flex lg:flex-row lg:justify-between lg:items-center lg:mx-auto lg:max-w-7xl py-6 xl:px-0 md:px-12 px-6">
                 <section>
                     <Link href='/'>

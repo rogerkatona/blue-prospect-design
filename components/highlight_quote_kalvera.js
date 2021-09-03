@@ -19,7 +19,7 @@ export default function HighlightQuoteKalvera() {
                     <span className="font-bold text-sm pt-3">
                         Dr. Kalpana Sundar <br/>
                         <span className="font-light">
-                            Physician, Entrepreneur, Author, Speaker, Adventurer
+                            Physician, Entrepreneur, Author, Speaker
                         </span>
                     </span>
                 </div>

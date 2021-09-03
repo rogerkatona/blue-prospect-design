@@ -39,21 +39,14 @@ export default function Post({ postData }) {
 
             <div className="">
                 <section className=''>
-                    <header className='max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12'>
-                        <div id="headlineText" className='text-6xl text-gray-700 font-light'>
-                            Articles
-                        </div>
-                        <div id="subHeadlineText" className='text-base text-gray-500 '>
-                            A collection of articles to teach, inspire, and elevate our work as web designers and front-end developers.
-                        </div>
-                    </header>
-                    <section className="w-full bg-opacity-5 bg-primaryLight">
+                    <section className="w-full bg-opacity-5 bg-primary">
                         <div className='lg:hidden md:block hidden max-w-7xl mx-auto md:px-12 px-6 pt-12'>
-                            <Link href='/campaign/website-analysis'>
+                            <Link href='/campaign/ux-audit'>
                                 <a>
                                     <img
+                                        className="filter transition duration-500 ease-in-out hover:brightness-50"
                                         src="/image/adLG-ux-audit.png"
-                                        alt="Website analysis graphic"
+                                        alt="UX audit graphic"
                                     />
                                 </a>
                             </Link>
@@ -107,9 +100,10 @@ export default function Post({ postData }) {
                         </section>
                         <section className='flex lg:block hidden pl-12 flex-shrink-0 '>
                             <div className=''>
-                                <Link href='/campaign/website-analysis'>
+                                <Link href='/campaign/ux-audit'>
                                     <a>
                                         <img
+                                            className="filter transition duration-500 ease-in-out hover:brightness-75"
                                             src="/image/adSM-ux-audit.png"
                                             alt="UX audit graphic"
                                         />

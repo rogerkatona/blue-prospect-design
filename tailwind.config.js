@@ -21,6 +21,7 @@ module.exports = {
         "screen80vh": "calc(80vh)",
         "screen75vh": "calc(75vh)",
         "screen65vh": "calc(65vh)",
+        "screen35vh": "calc(35vh)",
       }),
 
       gradientColorStops: theme => ({
@@ -56,6 +57,7 @@ module.exports = {
       'link': 'rgba(255,51,102,1)',
       'hoverLink': 'rgba(255,51,102,1)',
       'hoverNav': 'rgba(97,120,140,1)',
+      'campaign': '#495055',
     }),
     backgroundColor: theme => ({
       ...theme('colors'),
@@ -89,6 +91,12 @@ module.exports = {
       'darkBlue': '#06070d',
       'hoverNav': 'rgba(97,120,140,1)',
       'darkBlueServices': '#305670',
+      'campaign': '#495055',
+      'campaignLight': '#636B70',
+      'campaignCTA': '#F4A04E',
+
+
+
 
 
     }),
@@ -108,6 +116,7 @@ module.exports = {
       'raspberryDark': '#895675',
       'link': 'rgba(255,51,102,1)',
       'hoverNav': 'rgba(97,120,140,1)',
+      'campaign': '#495055',
     }),
     backgroundSize: {
       'auto': 'auto',
@@ -139,6 +148,11 @@ module.exports = {
       'hero-sm': "url('/image/logo-bp.png')",
       'hero-about': "url('/image/aboutLadder.png')",
       'bg-contactModal': "url('/image/bg-contact.jpeg')",
+      'bg-uxAudit-01': "url('/image/icon-campaign-uxaudit-01-opacity35.svg')",
+      'bg-uxAudit-02': "url('/image/icon-campaign-uxaudit-02-opacity35.svg')",
+      'bg-uxAudit-03': "url('/image/icon-campaign-uxaudit-03-opacity35.svg')",
+      'bg-uxAudit-04': "url('/image/icon-campaign-uxaudit-04-opacity35.svg')",
+      'bg-uxAudit-05': "url('/image/icon-campaign-uxaudit-05-opacity35.svg')",
     }),
 
     backgroundPosition: {
