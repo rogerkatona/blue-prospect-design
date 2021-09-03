@@ -51,7 +51,7 @@ export default function Post({ postData }) {
                                 </a>
                             </Link>
                         </div>
-                            <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-12 py-12 flex flex-row">
+                            <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 xl:py-12 py-12 flex md:flex-row flex-col">
                         <section className="lg:w-4/5">
                             <div className='font-roboto lg:text-3xl text-2xl '>{postData.title}</div>
                             <div className="py-2"> {postData.description} </div>
@@ -98,7 +98,7 @@ export default function Post({ postData }) {
                                 <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
                             </section>
                         </section>
-                        <section className='flex lg:block hidden pl-12 flex-shrink-0 '>
+                        <section className='md:pl-12 lg:block md:hidden flex-shrink-0'>
                             <div className=''>
                                 <Link href='/campaign/ux-audit'>
                                     <a>
