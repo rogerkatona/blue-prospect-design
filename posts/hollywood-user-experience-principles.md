@@ -23,7 +23,7 @@ ogImage: 'https://www.blueprospect.com/image/bannerSM-hollywood.png'
 
 I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. Whether it's noticing the signage at our local grocery store, seeing how a snack food is packaged and how it is different to other snack food brands, or observing real-life-ish Hollywood situations. I often consider how this information would be received from a general user's perspective.  For example: I may ask myself questions like, does this delicious looking snack I’m holding in my hand at this very moment, tell the same story from the online description down to packaging and branding and on to the final product?
 
-I want to answer that question now, but the crunching sound and amazing spicy queso flavor are too much for clear thought.
+I want to answer that question, but the crunching sound and amazing spicy queso flavor are too much for clear thought.
 
 Instead, let's dive into the movies now and we'll come back to the snack question later!  I'll share 3 examples where the hero of the movie could have applied user experience principles to eliminate needless suffering.
 
