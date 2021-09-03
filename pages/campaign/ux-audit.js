@@ -50,7 +50,7 @@ export default function UxAudit() {
                     <CampaignCTA002/>
                 </div>
                 <HighlightQuoteKalvera/>
-                <div className="w-full bg-bg-contactModal bg-cover">
+                <div className="w-full bg-bg-contactModal">
                     <CampaignValue/>
                 </div>
                 <CampaignFaqs/>

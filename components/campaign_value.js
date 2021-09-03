@@ -12,7 +12,7 @@ export default function CampaignValue() {
                             The data research for how fast a user forms an opinion about a company based on their experience with a company&apos;s digital properties is astounding!
                         </div>
                     </header>
-                    <div className="mt-12">
+                    <div className="my-12">
                         <CampaignValueItem campaignValueItems={campaignValueItems}/>
                     </div>
                 </div>
