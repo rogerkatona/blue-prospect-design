@@ -1,5 +1,5 @@
 ---
-title: 'How To Avoid Needless Suffering by Applying 3 Important User Experience (UX) Principles'
+title: 'Watching a Movie, Passing the Snacks, and Applying 3 Fundamental User Experience (UX) Principles'
 type: 'articles'
 date: '2021-08-25'
 description: "I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. "
