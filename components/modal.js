@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import  { Form } from "./form";
 import Link from "next/link";
+import ReactPlayer from "react-player";
 
 
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
+
     <>
-        <div className="relative" aria-modal aria-hidden tabIndex={-1} role="dialog">
+        <div className="relative bg-white " aria-modal aria-hidden tabIndex={-1} role="dialog">
             <header className="flex-shrink-0 fixed top-4 left-4 z-30">
                 <Link href='/'>
                     <a className=''>
@@ -70,26 +72,26 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                         </button>
                     </div>
                 </header>
-                <div className="flex md:flex-row flex-col max-w-7xl">
-                    <div className="flex bg-bg-contactModal md:h-screen p-4 items-center mx-auto">
-                        <div className="p-8 mt-12">
-                            <div  className="text-medGray">
-                                <div className="flex flex-col pb-12">
-                                    <p className="text-lightGray">Let&apos;s connect. I look forward to getting to know you and working on something great!</p>
+
+
+
+                    <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12 mt-12">
+                        <div className="flex flex-col md:flex-row justify-center">
+                            <div className="flex flex-col justify-center md:p-16 p-6 md:mb-0 mb-12 bg-bg-contactModal bg-no-repeat bg-cover h-screen75vh md:block hidden">
+                                <div className="">
+                                    <div className="text-lightGray md:text-2xl pb-6">I look forward to getting to know you and working on something great!</div>
                                 </div>
-                                <div className="flex flex-col">
-                                    <span className="">Roger Katona</span>
-                                    <p>roger.katona@blueprospect.com</p>
-                                    <p>904-450-5173</p>
+                                <div className="text-lightGray md:text-base text-xs">
+                                    <div className="">Roger Katona</div>
+                                    <div>roger.katona@blueprospect.com</div>
+                                    <div>904-450-5173</div>
                                 </div>
+                            </div>
+                            <div className="md:p-12 p-6 bg-gray w-full flex flex-col justify-center">
+                                <Form/>
                             </div>
                         </div>
                     </div>
-
-                    <div className="p-12 w-full flex flex-col justify-center">
-                        <Form />
-                    </div>
-                </div>
 
             </div>
         </div>

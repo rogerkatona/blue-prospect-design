@@ -14,8 +14,8 @@ export const Contact = () => {
                     <title>{siteTitle}</title>
                 </Head>
 
-                <div className="max-w-7xl mx-auto xl:px-0 px-12 min-h-screen">
-                    <header className='my-12'>
+                <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12">
+                    <header className='mb-12'>
                         <div id="headlineText" className='text-6xl text-gray-700 font-light'>
                             Contact
                         </div>
@@ -23,18 +23,18 @@ export const Contact = () => {
                             My passion to design and built things are only matched by my desire to serve my clients.
                         </div>
                     </header>
-                    <div className="flex flex-col md:flex-row justify-center h-screen65vh">
-                        <div className="flex flex-col justify-center md:p-16 p-8 bg-bg-contactModal bg-no-repeat bg-cover ">
+                    <div className="flex flex-col md:flex-row justify-center">
+                        <div className="flex flex-col justify-center md:p-16 p-6 md:mb-0 mb-12 bg-bg-contactModal bg-no-repeat bg-cover h-screen75vh">
                             <div className="">
-                                <p className="text-lightGray text-2xl md:pb-6 pb-2">I look forward to getting to know you and working on something great!</p>
+                                <div className="text-lightGray md:text-2xl pb-6">I look forward to getting to know you and working on something great!</div>
                             </div>
-                            <div className="text-lightGray">
+                            <div className="text-lightGray md:text-base text-xs">
                                 <div className="">Roger Katona</div>
                                 <div>roger.katona@blueprospect.com</div>
                                 <div>904-450-5173</div>
                             </div>
                         </div>
-                        <div className="md:p-16 p-8 bg-gray w-full flex flex-col justify-center">
+                        <div className="md:p-12 p-6 bg-gray w-full flex flex-col justify-center">
                             <Form initialRef={initialRef} />
                         </div>
                     </div>
