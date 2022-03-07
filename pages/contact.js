@@ -31,7 +31,7 @@ export const Contact = () => {
                             <div className="text-lightGray md:text-base text-xs">
                                 <div className="">Roger Katona</div>
                                 <div>roger.katona@blueprospect.com</div>
-                                <div>904-450-5173</div>
+                                <div>561.231.2718</div>
                             </div>
                         </div>
                         <div className="md:p-12 p-6 bg-gray w-full flex flex-col justify-center">

@@ -1,25 +1,24 @@
 const serviceItems = [
     {
-        label: "User Experience Audit",
-        description: "A comprehensive look at your digital product from a user's perspective.",
+        label: "UI/UX Services",
+        description: "UI/UX services for existing and new digital products.",
         src: "/image/icon-services-report.svg",
-        alt: "User Experience Audit Report Icon",
+        alt: "UI/UX services for existing and new digital products",
         list: [
-                "Analytics Review",
-                "Visual Design Audit",
+                "UI/UX Design",
+                "UX Audit",
                 "Workflow Analysis for Critical Paths",
-                "Content (Voice) Audit",
         ]
     },
     {
-        label: "Design",
-        description: "Design services for existing and new digital products.",
+        label: "Social Media",
+        description: "Professional content to engage your audience.",
         src: '/image/icon-services-design.svg',
-        alt: 'Design Services Icon',
+        alt: 'Social Media Solutions',
         list: [
-                "User Interface Design",
-                "User Experience Design",
-                "Graphic Design",
+                "Video Studio",
+                "Audio Recording",
+                "Podcasts",
             ]
     },
     {
