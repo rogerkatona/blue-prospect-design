@@ -11,7 +11,7 @@ export default function CampaignFeatures() {
                         <div className='font-roboto text-4xl tracking-tighter'>What&apos;s Included?</div>
                         <div className="lg:text-3xl text-2xl pt-6">Our User Experience (UX) Audit will provide you with clear direction for improving your User Interfaces based on UX best practices.
                         </div>
-                        <div className="grid lg:grid-cols-3 gap-4 lg:pb-0 pt-6 lg:mx-auto">
+                        <div className="grid lg:grid-cols-2 gap-4 lg:pb-0 pt-6 lg:mx-auto">
                             <CampaignFeatureItem campaignFeatureItems={campaignFeatureItems}/>
                         </div>
                     </div>

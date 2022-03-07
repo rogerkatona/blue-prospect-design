@@ -10,7 +10,7 @@ export default function CampaignWhatIs() {
                     <div className="flex flex-col items-center justify-center text-center">
                         <div className='font-roboto text-4xl tracking-tighter'>What is a User Experience (UX) Audit?</div>
                         <div className="lg:text-3xl text-2xl pt-6">
-                            In a nutshell, it’s a close examination of your digital properties from the perspective of the people that use them.
+                            In a nutshell, it’s a close examination of your digital properties from the perspective of the people who use them.
                         </div>
                         <div className="pt-12">
                             <img

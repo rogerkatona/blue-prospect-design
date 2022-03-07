@@ -73,8 +73,6 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                     </div>
                 </header>
 
-
-
                     <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12 mt-12">
                         <div className="flex flex-col md:flex-row justify-center">
                             <div className="flex flex-col justify-center md:p-16 p-6 md:mb-0 mb-12 bg-bg-contactModal bg-no-repeat bg-cover h-screen75vh md:block hidden">

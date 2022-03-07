@@ -24,7 +24,7 @@ export const Contact = () => {
                         </div>
                     </header>
                     <div className="flex flex-col md:flex-row justify-center">
-                        <div className="flex flex-col justify-center md:p-16 p-6 md:mb-0 mb-12 bg-bg-contactModal bg-no-repeat bg-cover h-screen75vh">
+                        <div className="flex flex-col justify-center md:p-16 p-6 bg-bg-contactModal bg-no-repeat bg-cover h-screen75vh">
                             <div className="">
                                 <div className="text-lightGray md:text-2xl pb-6">I look forward to getting to know you and working on something great!</div>
                             </div>

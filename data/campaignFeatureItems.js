@@ -1,6 +1,6 @@
 const campaignFeatureItems = [
     {
-        label: "We'll Evaluate",
+        label: "Evaluate",
         description: "A comprehensive look at your digital product from a user's perspective.",
         src: "/image/icon-campaign-uxaudit-03.svg",
         alt: "User Experience Audit Report Icon",
@@ -8,31 +8,20 @@ const campaignFeatureItems = [
 
             "Navigation and wayfinding",
             "Content for voice and consistency",
-            "Overall design",
+            "Overall ascetics and design",
             "Critical workflows",
         ]
     },
     {
-        label: "Task Analysis",
-        description: "Design services for existing and new digital products.",
-        src: "/image/icon-campaign-uxaudit-04.svg",
-        alt: 'Design Services Icon',
-        list: [
-            "Closely evaluate each critical workflow",
-            "Define critical gaps and opportunities",
-            "Where are your users struggling to complete tasks?",
-        ]
-    },
-    {
-        label: "Performance Report",
+        label: "Report",
         description: "Update existing products and developing new products.",
         src: "/image/icon-campaign-uxaudit-05.svg",
         alt: 'Development Services Icon',
         list: [
-            "Identify areas to improve",
-            "Issue Classification:  Priority to Level of Effort",
-            "Comprehensive workflow analysis",
-            "Identify a best-of-class user experience",
+            "Present an easy to read and understand report",
+            "Prioritize the findings based on importance, and how easy they are to fix",
+            "Comprehensive analysis for your critical workflows",
+            "Provide clear next steps",
         ]
     },
 ];

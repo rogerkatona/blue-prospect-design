@@ -63,7 +63,7 @@ export default function Header() {
                                     </svg>
                                 </div>
                                 <span className="text-2xl font-body uppercase tracking-tight text-white pl-3 hover:text-sand md:block hidden">
-                                    Blue Prospect Design
+                                    Blue Prospect Web Studio
                                 </span>
                             </div>
                         </a>

@@ -26,7 +26,7 @@ export default function UxAudit() {
                     <section className='flex lg:flex-row flex-col justify-between items-center max-w-7xl mx-auto'>
                         <div className=''>
                             <div className='font-roboto text-6xl tracking-tighter text-white'>User Experience Audit</div>
-                            <div className='text-sand text-xl md:py-2 py-6'>Haven&apos;t our users suffered long enough?</div>
+                            <div className='text-sand text-xl md:py-2 py-6'>Invest in your users.  They deserve it.</div>
                             <div className="md:my-10 p-4 bg-campaignLight w-full flex flex-col justify-center">
                                 <Form initialRef={initialRef} />
                             </div>

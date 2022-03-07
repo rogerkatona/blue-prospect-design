@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Header from "./header";
 import Footer from "./footer";
 
-export const siteTitle = 'Blue Prospect Design, LLC.'
+export const siteTitle = 'Blue Prospect Web Studio'
 
 export default function Layout({ children}) {
 

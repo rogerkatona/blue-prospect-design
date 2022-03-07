@@ -148,11 +148,16 @@ module.exports = {
       'hero-sm': "url('/image/logo-bp.png')",
       'hero-about': "url('/image/aboutLadder.png')",
       'bg-contactModal': "url('/image/bg-contact.jpeg')",
+      'bg-uxAudit': "url('/image/bannerLG-ux-campaign.png')",
       'bg-uxAudit-01': "url('/image/icon-campaign-uxaudit-01-opacity35.svg')",
       'bg-uxAudit-02': "url('/image/icon-campaign-uxaudit-02-opacity35.svg')",
       'bg-uxAudit-03': "url('/image/icon-campaign-uxaudit-03-opacity35.svg')",
       'bg-uxAudit-04': "url('/image/icon-campaign-uxaudit-04-opacity35.svg')",
       'bg-uxAudit-05': "url('/image/icon-campaign-uxaudit-05-opacity35.svg')",
+
+
+
+
     }),
 
     backgroundPosition: {
