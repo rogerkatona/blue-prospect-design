@@ -16,7 +16,7 @@ export default function HeroIndex({ children, home}) {
                     animate={{ opacity: 1}}
                     transition={{ duration: .50, delay:1 }}
                 >
-                    <div className="font-gloock text-2xl text-center text-medBlue.100 md:pt-8 pt-2 ">
+                    <div className="font-gloock text-2xl text-center text-medBlue.100 pt-2 ">
                         At Blue Prospect, we create a bespoke web presence as unique as you.
                     </div>
                 </motion.div>
