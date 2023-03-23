@@ -4,7 +4,6 @@ import  { Form } from "../../components/form";
 import {useEffect, useRef, useState} from "react";
 import CampaignFeatures from "../../components/campaign_features";
 import CampaignWhatIs from "../../components/campaign_whatIs";
-import HighlightQuoteKalvera from "../../components/highlight_quote_kalvera";
 import CampaignCTA001 from "../../components/campaign_cta_001";
 import CampaignCTA002 from "../../components/campaign_cta_002";
 import CampaignFaqs from "../../components/campaign_faqs";
@@ -35,7 +34,7 @@ export default function UxAudit() {
                         <div className="lg:pt-0 pt-6 lg:pl-24 pl-0">
                             <img
                                 className=""
-                                src='/image/bannerLG-ux-campaign.png'
+                                src='/image/campaign/bannerLG-ux-campaign.png'
                                 alt="User Experience banner graphic"
                             />
 
@@ -49,7 +48,6 @@ export default function UxAudit() {
                 <div className="w-full bg-campaign xl:px-0 md:px-12 px-6 xl:py-24 py-12 ">
                     <CampaignCTA002/>
                 </div>
-                <HighlightQuoteKalvera/>
                 <div className="w-full bg-bg-contactModal">
                     <CampaignValue/>
                 </div>

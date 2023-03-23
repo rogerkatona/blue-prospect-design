@@ -1,20 +1,20 @@
 ---
 title: 'Crushing Snacks at the Movies, and Applying 3 Fundamental User Experience (UX) Principles'
-type: 'articles'
+type: 'blog'
 date: '2021-08-25'
 description: "I can't speak for you, but as a designer, I see most things through the lens of my chosen profession. "
 isFeatured: 'true'
-bannerImageSource: '/image/bannerLG-hollywood.png'
-bannerSMImageSource: '/image/bannerSM-hollywood.png'
-imageSourceFeatured: '/image/bannerLG-hollywood.png'
+bannerImageSource: '/image/blog/hollywood/banner-sm.png'
+bannerSMImageSource: '/image/blog/hollywood/banner-sm.png'
+imageSourceFeatured: '/image/blog/hollywood/banner-lg.png'
 topic: 'UI/UX Design | User Experience'
 alt: 'Hollywood graphic'
 author: 'Roger Katona'
 authorDescription: 'UI/UX Designer'
 authorImageSource: '/image/author_rogerkatona.png'
 ogURL: 'https://www.blueprospect.com/articles/hollywood-user-experience-principles'
-ogType: 'article'
-ogImage: 'https://www.blueprospect.com/image/bannerSM-hollywood.png'
+ogType: 'blog'
+ogImage: 'https://www.blueprospect.com//image/blog/hollywood/banner-sm.png'
 ---
 <br>
 

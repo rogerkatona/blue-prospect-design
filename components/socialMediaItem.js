@@ -6,14 +6,14 @@ const SocialMedia = props => (
     <div className="ml-2 filter transition duration-500 ease-in-out hover:brightness-75">
         <Link
             href={props.path}>
-            <a>
+            <span>
                 <img
                     src={props.src}
                     height={32}
                     width={32}
                     alt={props.alt}
                 />
-            </a>
+            </span>
         </Link>
     </div>
 );

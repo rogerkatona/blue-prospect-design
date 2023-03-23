@@ -8,17 +8,20 @@
   "dependencies": {
     "aws-sdk": "^2.948.0",
     "date-fns": "^2.22.1",
+    "framer-motion": "^10.1.0",
     "gray-matter": "^4.0.3",
-    "next": "latest",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "remark-html": "^13.0.1"
+    "next": "^13.2.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.4.3",
+    "remark-html": "^13.0.1",
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "aws-amplify": "^4.2.0",
     "eslint": "^7.30.0",
-    "eslint-config-next": "^11.0.1",
+    "eslint-config-next": "^13.2.3",
     "eslint-plugin-react-hooks": "^4.2.0",
     "postcss": "^8.3.5",
     "react-player": "^2.9.0",

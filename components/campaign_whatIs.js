@@ -1,6 +1,3 @@
-import ServiceItem from "./serviceItem";
-import serviceItems from "../data/serviceItems";
-
 
 export default function CampaignWhatIs() {
     return (
@@ -15,7 +12,7 @@ export default function CampaignWhatIs() {
                         <div className="pt-12">
                             <img
                                 className=""
-                                src='/image/campaign-graphic-uxAudit-whatIs.png'
+                                src='/image/campaign/campaign-graphic-uxAudit-whatIs.png'
                                 alt="User Experience banner graphic"
                             />
                         </div>
