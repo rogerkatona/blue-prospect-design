@@ -10,6 +10,9 @@ bannerImageSource: '/image/client/mobymax/banner-lg.png'
 bannerSMImageSource: '/image/client/mobymax/banner-sm.png'
 topic: 'Rapid Design Cycle | A/B Testing | Quantitative and Qualitative Testing | Functional Prototypes | Agile Methodology'
 alt: 'Portfolio-MobyMax'
+author: 'Roger Katona'
+authorDescription: 'UI/UX Designer'
+authorImageSource: '/image/author_rogerkatona.png'
 ogURL: 'https://www.rogerkatona.com/posts/mobymax'
 ogType: 'article'
 ogImage: 'https://www.blueprospect.com/image/client/mobymax/banner-sm.png'
@@ -43,4 +46,4 @@ It was an amazing opportunity to work with a cutting edge Edtech software compan
 ---
 
 Information Architecture for a complete redesign of the adminstration user interface
-![MobyMax Information Architecture](/image/postGraphic-mobymaxA.png)
+![MobyMax Information Architecture](/image/client/mobymax/postGraphic-mobymaxA.png)

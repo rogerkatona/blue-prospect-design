@@ -31,20 +31,20 @@ home listings, their recent activity, an opportunity to learn more about the age
 
 ## Design Logo
 
-![Home ASAP Design](/image/postGraphic-homeASAPA.png)
+![Home ASAP Design](/image/client/home-asap/postGraphic-homeASAPA.png)
 
 ---
 
 ## Deliver to the development team fully designed pages in an interactive prototype
 This page provided a full description of the agent, including about, ratings and reviews, recent sales activity sections.
-![Home ASAP Design](/image/postGraphic-homeASAPB.png)
+![Home ASAP Design](/image/client/home-asap/postGraphic-homeASAPB.png)
 
 ---
 
 This page demonstrates the agents recent activity in the marketplace.
-![Home ASAP Design](/image/postGraphic-homeASAPC.png)
+![Home ASAP Design](/image/client/home-asap/postGraphic-homeASAPC.png)
 
 ---
 
 This page demonstrates a secondary search method by viewing an agents properties via a google maps api intergration.  
-![Home ASAP Design](/image/postGraphic-homeASAPD.png)
+![Home ASAP Design](/image/client/home-asap/postGraphic-homeASAPD.png)

@@ -89,7 +89,7 @@ export const Form = ({ initialRef}) => {
 
                 <div className="flex flex-col">
                     <label
-                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-white' : 'text-black'} uppercase tracking-wide text-xs`}>
+                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-white.100' : 'text-black'} uppercase tracking-wide text-xs`}>
                         Name*
                     </label>
                     <input
@@ -104,7 +104,7 @@ export const Form = ({ initialRef}) => {
                 </div>
                 <div className="flex flex-col">
                     <label
-                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-white' : 'text-black'} uppercase tracking-wide text-xs`}>
+                        className={`${router.pathname.startsWith("/campaign/")  ? 'text-white.100' : 'text-black'} uppercase tracking-wide text-xs`}>
                         Email*
                     </label>
                     <input
@@ -138,7 +138,7 @@ export const Form = ({ initialRef}) => {
                 <div className="">
                     <button
                         type="submit"
-                        className={`${router.pathname.startsWith("/campaign/")  ? 'bg-campaignCTA hover:bg-opacity-75 md:text-2xl ' : 'bg-link hover:bg-secondary text-2xl'}  text-white uppercase hover:text-gray-50 py-4 px-8 `}>
+                        className={`${router.pathname.startsWith("/campaign/")  ? 'bg-campaign.700 hover:bg-opacity-75 md:text-2xl ' : 'bg-link hover:bg-secondary text-2xl'}  text-white.100 uppercase hover:text-gray-50 py-4 px-8 `}>
                         {`${router.pathname.startsWith("/campaign/")  ? 'Submit your request' : 'Submit'}`}
                     </button>
                 </div>

@@ -29,6 +29,7 @@ export default function Header() {
                                     <img
                                         src="/image/logo/blue-prospect-simple.png"
                                         width={175}
+                                        alt="Blue Prospect logo"
                                     />
                                 </div>
                             </div>

@@ -5,10 +5,12 @@ export default function HeroServices({ children, home }) {
                 <img
                     className="md:block hidden"
                     src="/image/bannerLG-services.png"
+                    alt="services banner"
                 />
                 <img
                     className="md:hidden block"
                     src="/image/bannerSM-services.png"
+                    alt="services banner"
                 />
             </div>
         </section>
