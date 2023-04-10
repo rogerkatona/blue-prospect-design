@@ -6,6 +6,9 @@
     body {
         @apply p-0 min-h-screen;
     }
+    ul li {
+        @apply list-disc list-inside ;
+    }
     h1 {
         @apply font-roboto text-3xl;
     }
@@ -22,7 +25,7 @@
              @apply text-gray.700 mt-8 mb-4;
          }
     p {
-        @apply leading-loose text-justify md:text-left mb-6;
+        @apply text-justify md:text-left mb-6;
     }
 
     p a {

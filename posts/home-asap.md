@@ -7,6 +7,9 @@ isFeatured: 'false'
 bannerImageSource: '/image/client/home-asap/banner-lg.png'
 bannerSMImageSource: '/image/client/home-asap/banner-sm.png'
 topic: 'React | NextJS | User Interface Design | User Experience Design | Invision | Sketch'
+author: 'Roger Katona'
+authorDescription: 'UI/UX Designer'
+authorImageSource: '/image/author_rogerkatona.png'
 ogURL: 'https://www.blueprospect.com/posts/home-asap'
 ogType: 'portfolio'
 ogImage: 'https://www.blueprospect.com/image/client/home-asap/banner-sm.png'
@@ -37,14 +40,17 @@ home listings, their recent activity, an opportunity to learn more about the age
 
 ## Deliver to the development team fully designed pages in an interactive prototype
 This page provided a full description of the agent, including about, ratings and reviews, recent sales activity sections.
+
 ![Home ASAP Design](/image/client/home-asap/postGraphic-homeASAPB.png)
 
 ---
 
 This page demonstrates the agents recent activity in the marketplace.
+
 ![Home ASAP Design](/image/client/home-asap/postGraphic-homeASAPC.png)
 
 ---
 
 This page demonstrates a secondary search method by viewing an agents properties via a google maps api intergration.  
+
 ![Home ASAP Design](/image/client/home-asap/postGraphic-homeASAPD.png)
