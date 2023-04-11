@@ -16,7 +16,7 @@ export const Contact = () => {
 
                 <div className="max-w-7xl mx-auto xl:px-0 md:px-12 px-6 py-12">
                     <header className='mb-12'>
-                        <div id="headlineText" className='text-6xl text-gray-700 font-light'>
+                        <div id="headlineText" className='text-6xl text-gray.700 font-light'>
                             Contact
                         </div>
                         <div id="subHeadlineText" className='text-base text-gray-500 mt-2'>
@@ -26,15 +26,15 @@ export const Contact = () => {
                     <div className="flex flex-col md:flex-row justify-center">
                         <div className="flex flex-col justify-center md:p-16 p-6 bg-bg-contactModal bg-no-repeat bg-cover h-screen75vh">
                             <div className="">
-                                <div className="text-lightGray md:text-2xl pb-6">I look forward to getting to know you and working on something great!</div>
+                                <div className="text-gray.100 md:text-2xl pb-6">I look forward to getting to know you and working on something great!</div>
                             </div>
-                            <div className="text-lightGray md:text-base text-xs">
+                            <div className="text-gray.100 md:text-base text-xs">
                                 <div className="">Roger Katona</div>
                                 <div>roger.katona@blueprospect.com</div>
                                 <div>561.231.2718</div>
                             </div>
                         </div>
-                        <div className="md:p-12 p-6 bg-gray w-full flex flex-col justify-center">
+                        <div className="md:p-12 p-6 bg-gray.100 w-full flex flex-col justify-center">
                             <Form initialRef={initialRef} />
                         </div>
                     </div>

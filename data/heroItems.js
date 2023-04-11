@@ -1,32 +1,38 @@
 const heroItems = [
     {
         id:1,
-        label: "UX Design Services",
-        description: "Dr. Sundar is a seasoned media expert speaking on topics from Ear, Nose, and Throat issues, Beauty, Wellness and more.",
+        label: "UX Services",
+        description: "Design is never in a vacuum. Introducing a new feature or process into an existing digital property requires a thoughtful understanding of how users currently navigate and complete tasks. ",
         background: "dark",
     },
     {
         id:2,
         label: "workshops",
-        description: "As a seasoned professional, Dr. Sundar will elevate your participants experience at your next conference.  Dynamic opening keynotes, engaging breakout sessions, and inspiring.",
+        description: "As a seasoned professional, Roger will share his insights and methods to ensure your UX team is inspired and driven to success.",
         background: "dark",
     },
     {
         id:3,
         label: "clients",
-        description: "As the medical landscape continues to evolve during a global pandemic, it is more important than ever to keep our medical professionals engaged and productive.",
+        description: "A collection of organizations I have been fortunate to work with as a seasoned professional. I have inspired and been inspired, I have given my talent and skills to these organizations and they have given me as much in return.",
         background: "dark",
     },
     {
         id:4,
         label: "blog",
-        description: "A collection of teaching and self reflection that can inspire possibilities to the reader.",
-        background: "light",
+        description: "Teaching and self reflection that can inspire possibilities for future designers. Passing along information to the next generation of designers ensures the user is always at the table when considering designs.",
+        background: "dark",
     },
+/*    {
+        id:4,
+        label: "blog",
+        description: "Teaching and self reflection that can inspire possibilities to the reader.",
+        background: "dark",
+    },*/
     {
         id:5,
         label: "about",
-        description: "Dr. Kalpana Sundar is a motivational speaker who focuses on guiding women in medicine towards a fulfilling career and personal life. She works to help women navigate the medical field with clarity to work towards their version of personal success.",
+        description: "Roger Katona is a user-centered designer that provides solutions for two principal user groups. My client and the users of their web-based application or website. My core value is to help users have a delightful experience using my designs to complete tasks or find information.",
         background: "dark",
     }
 ];

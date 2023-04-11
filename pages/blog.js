@@ -7,6 +7,7 @@ import {useEffect, useState} from "react";
 import Hero from "../components/hero";
 import Quote from "../components/quote";
 import BookACall_01 from "../components/bookACall_01";
+import Promo from "../components/promo";
 
 
 export async function getStaticProps() {
@@ -44,11 +45,10 @@ export default function Blog({allPostsData}) {
             <Head>
                 <title>{siteTitle}</title>
             </Head>
-            <div className="min-h-screen">
 
-                <header className="bg-hero-blog min-h-screen25vh max-h-screen25vh bg-cover bg-center bg-no-repeat">
-                    <Hero id={4}/>
-                </header>
+            <div className="bg-hero-about min-h-screen20vh max-h-screen20vh bg-cover bg-right bg-no-repeat">
+                <Hero id={4}/>
+            </div>
                 <div className='font-bebasNeue text-6xl uppercase text-gray.700 flex flex-row justify-center py-12'>Featured Blog</div>
                 <section className="py-6 bg-gray.100">
                     {featuredPosts
@@ -115,7 +115,8 @@ export default function Blog({allPostsData}) {
                     </div>
                 </div>
                 </section>
-                <BookACall_01/>
+            <div className="bg-gray.050 -mt-12 ">
+                <Promo id={1}/>
             </div>
         </Layout>
     )

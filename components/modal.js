@@ -8,10 +8,10 @@ import ReactPlayer from "react-player";
 const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
 
     <>
-        <div className="relative bg-white " aria-modal aria-hidden tabIndex={-1} role="dialog">
+        <div className="relative bg-white.100" aria-modal aria-hidden tabIndex={-1} role="dialog">
             <header className="flex-shrink-0 fixed top-4 left-4 z-30">
                 <Link href='/'>
-                    <a className=''>
+                    <span className=''>
                         <div className="">
                             <svg
                                 viewBox={'0 0 59 57'}
@@ -55,13 +55,13 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
             c0.3,0.5,0.44,1.11,0.44,1.83C40.39,30.95,40.24,31.56,39.95,32.06z"/>
                             </svg>
                         </div>
-                    </a>
+                    </span>
                 </Link>
             </header>
-            <div className="w-full h-full z-20 bg-white fixed top-0 left-0 ">
+            <div className="w-full h-full z-20 bg-white.100 fixed top-0 left-0 ">
                 <header className="fixed right-0">
                     <div className="modal-close cursor-pointer z-20 p-4">
-                        <button type="button" className="text-white" data-dismiss="modal" aria-label="Close" onClick={hide}>
+                        <button type="button" className="text-white.100" data-dismiss="modal" aria-label="Close" onClick={hide}>
                             <span aria-hidden="true">
                                 <svg className="fill-primary text-primary" xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                      viewBox="0 0 18 18">
@@ -77,15 +77,15 @@ const Modal = ({ isShowing, hide }) => isShowing ? ReactDOM.createPortal(
                         <div className="flex flex-col md:flex-row justify-center">
                             <div className="flex flex-col justify-center md:p-16 p-6 md:mb-0 mb-12 bg-bg-contactModal bg-no-repeat bg-cover h-screen75vh md:block hidden">
                                 <div className="">
-                                    <div className="text-lightGray md:text-2xl pb-6">I look forward to getting to know you and working on something great!</div>
+                                    <div className="text-gray.100 md:text-2xl pb-6">I look forward to getting to know you and working on something great!</div>
                                 </div>
-                                <div className="text-lightGray md:text-base text-xs">
+                                <div className="text-gray.100 md:text-base text-xs">
                                     <div className="">Roger Katona</div>
                                     <div>roger.katona@blueprospect.com</div>
                                     <div>904-450-5173</div>
                                 </div>
                             </div>
-                            <div className="md:p-12 p-6 bg-gray w-full flex flex-col justify-center">
+                            <div className="md:p-12 p-6 bg-gray.100 w-full flex flex-col justify-center">
                                 <Form/>
                             </div>
                         </div>

@@ -5,6 +5,7 @@ import Offerings from "../components/offerings";
 import Services from "../components/services";
 import BookACall_02 from "../components/bookACall_02";
 import Quote from "../components/quote";
+import Promo from "../components/promo";
 
 export default function Design() {
 
@@ -22,11 +23,10 @@ export default function Design() {
             </div>
             <Services type="service" subtype="ux-design"/>
             <Quote id={1}/>
-            <div className="flex flex-row justify-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
+{/*            <div className="flex flex-row justify-center font-bebasNeue text-6xl text-gray.700 bg-gray.100 py-12">
                 UX Consulting
-            </div>
-            <Services type="service" subtype="ux-consulting"/>
-            <BookACall_02/>
+            </div>*/}
+
 
         </Layout>
     )

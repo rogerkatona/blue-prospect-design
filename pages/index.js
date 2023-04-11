@@ -4,11 +4,10 @@ import ClientLogos from "../components/client-logos";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
-import BookACall_01 from "../components/bookACall_01";
 import HeroIndex from "../components/hero_index"
-import MissionStatement from "../components/missionStatement";
 import Features from "../components/features";
 import Quote from "../components/quote";
+import Promo from "../components/promo";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData()
@@ -35,9 +34,8 @@ export default function Home({allPostsData}) {
         <Features  featured="true" type="service" subtype="ux-design"/>
         <Quote id={1}/>
         <Features  featured="true" type="workshop"/>
-        <BookACall_01/>
+      <Promo id={0}/>
       <Features  featured="true" type="client" />
-      <BookACall_01/>
       {
         featuredPosts
             .filter(featured => featured.type === 'blog')
@@ -81,7 +79,7 @@ export default function Home({allPostsData}) {
                   </div>
                 </section>
             )}
-      <BookACall_01/>
+        <Promo id={2}/>
         <Features  featured="true" type="about" />
     </Layout>
   )
